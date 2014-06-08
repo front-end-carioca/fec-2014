@@ -55,7 +55,12 @@ body {margin: 0; padding: 0}
 
 /* ----- END SECTION ------ */
 
-
+/* ----- SECAION CONNTENT ----- */
+.jumbotron {
+    background-color: #fff !important;
+    border: 1px solid #000;
+}
+/* ----- SECAION CONNTENT  END ----- */
 
 /* Responsive */
 @media screen and (max-width: 968px) {
