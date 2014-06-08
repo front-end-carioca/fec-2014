@@ -59,7 +59,132 @@ body {margin: 0; padding: 0}
 .jumbotron {
     background-color: #fff !important;
     border: 1px solid #000;
+    padding: 10px !important;   
 }
+#bottom-inscreva-se {
+    background-color: #194969;
+    width: 350px;
+    height: 50px;
+    padding-top: 10px;
+    border-radius: 7px;
+    margin: auto;
+   
+    box-shadow: 1px 1px 0px 2px #0c3147;
+   -webkit-box-shadow: 1px 1px 0px 2px #0c3147;
+   -moz-box-shadow: 1px 1px 0px 2px #0c3147;
+
+    a {
+        color: #f0be1d;
+        text-transform: capitalize;
+        font-size: 20px;
+        text-align: center;
+        margin-left: 25px;
+        text-decoration: none;
+    }
+    &:hover {
+        opacity: 0.90;
+        cursor: pointer;
+    }
+}
+
+.icons-inform {
+
+    img {
+        float: left;
+        margin-right: 10px;
+    }
+
+    span {
+        color: #ccc;
+    }
+
+    h4 {
+        margin-top: 15px;
+    }
+}
+.icons-inform {
+    float: left;
+    margin-left: 20px;
+    width: 250px;
+    margin-top: 40px;
+}
+
+#sobre-o-evento {
+
+    h1 {
+        font-size: 40px !important;
+        color: #1b4866 !important;
+        margin-top: 30px;
+    }
+    h2  {
+        font-size: 23px !important;
+        color: #1b4866 !important;
+        margin-top: 50px;
+        margin-bottom: 20px;
+    }
+    ul {
+        width: 250px;
+        float: left;
+        li {
+            font-size: 16px !important;
+            margin-bottom: 15px;
+        }
+    }
+    p {
+        font-size: 18px !important;
+        color: #666 !important;
+    }
+    img {
+        float: right;
+    }
+}
+
+#programacao-palestrantes {
+    margin-top: 120px;
+
+    h1 {
+        font-size: 40px !important;
+        color: #1b4866 !important;
+        margin-top: 30px;
+    }
+
+    .programacao {
+    width: 100%;
+    border: 1px solid #ccc;
+
+    .box-horario {
+        width: 200px;
+        height: 170px;
+        background-color: #f5f5f5;
+        float: left;
+        margin-right: 10px;
+    }
+    .descricao {
+        width: 700px;
+        height: 170px;
+        border: 1px solid #000;
+        padding: 5px;
+        float: left;
+        margin-right: 10px;
+
+        h3 {
+            font-size: 18px !important;
+            margin-top: 5px;
+            margin-bottom: 3px;
+        } 
+        span {
+            font-size: 14px !important;
+            font-weight: bold;
+            color: #666;
+            margin-bottom: 15px !important;
+        }
+        p {
+            font-size: 14px !important;
+        }
+    }
+}
+}
+
 /* ----- SECAION CONNTENT  END ----- */
 
 /* Responsive */
@@ -95,3 +220,4 @@ body {margin: 0; padding: 0}
         h4{font-size: 5vw;}
    }
 }
+
