@@ -4,9 +4,11 @@
 
 > Este repositório foi criado para trabalharmos em cima do site de nossa primeira edição, que será realizada na Universidade Veiga de Almeida - Campus Tijuca no Rio de Janeiro.
 
+### O Projeto
+
 O projeto o qual estamos trabalhando está sendo usado baseado em novas tecnologias, para aperfeiçoar conhecimentos e adaptar melhorias, performance e funcionalidade no site, onde os usuários poderão navegar sem problema algum.
 
-Se você quer contribuir para algumas melhorias ou reparos, basta segui os procedimentos abaixo:
+* Se você quer contribuir para algumas melhorias ou reparos, basta segui os procedimentos abaixo:
 
 1 - Fork o projeto e logo após dê um clone.
 
@@ -29,3 +31,21 @@ Se você quer contribuir para algumas melhorias ou reparos, basta segui os proce
 6 - Faça suas alterações e logo após dê um push.
 
 7 - Mande-nos seu pull request que avaliaremos
+
+### Organizadores
+
+- [Pedro Polisenso](https://www.facebook.com/pedropolisenso)
+- [João Felipe](https://www.facebook.com/jotaefebr)
+- [André Vitor Valle](https://www.facebook.com/andrevvalle)
+- [Luis Fernando](https://www.facebook.com/luisfernandomangia)
+- [Paulo Filho](https://www.facebook.com/paulofilho.org)
+
+### Formas de Contato
+
+- Contato: contato@frontendcarioca.com.br
+- Patrocínio: patrocinio@frontendcarioca.com.br
+- Site: http://www.frontendcarioca.com.br
+
+### License
+
+[License MIT](http://opensource.org/licenses/MIT)
