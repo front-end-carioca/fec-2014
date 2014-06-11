@@ -20,7 +20,7 @@ O projeto o qual estamos trabalhando está sendo usado baseado em novas tecnolog
 
 `npm install -g bower`
 
-4 - Instale o SASS, caso não tenha o recurso, com o seguinte comando: (se vc usa Mac ou Linux ja deve ter Ruby instalado, senão instale)
+4 - Instale o SASS.
 
 `gem install sass`
 
