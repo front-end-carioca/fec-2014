@@ -8,7 +8,7 @@
 
 O projeto o qual estamos trabalhando está sendo usado baseado em novas tecnologias, para aperfeiçoar conhecimentos e adaptar melhorias, performance e funcionalidade no site, onde os usuários poderão navegar sem problema algum.
 
-* Se você quer contribuir para algumas melhorias ou reparos, basta segui os procedimentos abaixo:
+***Se você quer contribuir para algumas melhorias ou reparos, basta segui os procedimentos abaixo:***
 
 1 - Fork o projeto e logo após dê um clone.
 
