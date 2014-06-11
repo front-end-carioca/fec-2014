@@ -11,16 +11,16 @@ Se você quer contribuir para algumas melhorias ou reparos, basta segui os proce
 1 - Fork o projeto e logo após dê um clone.
 
 2 - Acesse a pasta do projeto via linha de comando e baixe os módulos NPM's com o comando: 
-```sh npm install``` 
+`npm install`
 
 3 - É necessário instalar o nosso amigo bower por isso use o comando:
-``sh npm install -g bower ```
+`npm install -g bower`
 
 4 - Instale o SASS, caso não tenha o recurso, com o seguinte comando: (se vc usa Mac ou Linux ja deve ter Ruby instalado, senão instale)
-```sh gem insta ```
+`gem install sass`
 
 5 - Instale o componente do bootstrap com o comano:
-```sh npm install bootstrap-sass-official ```
+`npm install bootstrap-sass-official`
 
 6 - Faça suas alterações e logo após dê um push.
 
