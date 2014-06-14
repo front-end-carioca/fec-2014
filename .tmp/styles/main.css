@@ -5260,51 +5260,45 @@ body {
     color: #fff;
     font-size: 1.3em; }
 
+.ball_cristo {
+  position: absolute;
+  right: 50px;
+  top: 125px;
+  z-index: 1; }
+
 /* ------ END HEADER ------ */
-/* ------ SECTION START --- */
+/* ------ SECTION BUTTON INSCREVA-SE --- */
+.wrapper-button {
+  width: 100%;
+  height: auto;
+  padding: 10px;
+  position: relative; }
+
 .button-inscrevase {
-  width: 200px;
+  width: 360px;
   margin: 0 auto; }
 
 .btn-custom {
-  margin: 0 auto; }
-
-/* ----- END SECTION ------ */
-/* ----- SECAION CONNTENT ----- */
-.button-inscrevase {
-  width: 200px;
-  margin: 0 auto; }
-
-.btn-custom {
-  margin: 0 auto; }
-
-.jumbotron {
-  background-color: #fff !important;
-  padding: 10px !important; }
-
-#bottom-inscreva-se {
-  background-color: #194969;
-  width: 350px;
-  height: 50px;
-  padding-top: 15px;
+  background-color: #194a6b;
+  padding: 13px 50px;
+  border: 0;
   border-radius: 7px;
-  margin: auto;
   box-shadow: 1px 1px 0px 2px #0c3147;
-  -webkit-box-shadow: 1px 1px 0px 2px #0c3147;
-  -moz-box-shadow: 1px 1px 0px 2px #0c3147; }
-
-#bottom-inscreva-se a {
-  color: #f0be1d;
   text-transform: capitalize;
-  font-size: 20px;
-  text-align: center;
-  margin-left: 25px;
-  text-decoration: none; }
+  font-size: 1.2vw;
+  color: #f2c51a;
+  position: relative;
+  -o-box-shadow: 1px 1px 0px 2px #0c3147;
+  box-shadow: 1px 1px 0px 2px #0c3147; }
+  .btn-custom:hover {
+    transition: all 0.6s;
+    background: #194a6b;
+    color: #f2c51a;
+    top: 2px;
+    opacity: 0.9; }
 
-#bottom-inscreva-se:hover {
-  opacity: 0.90;
-  cursor: pointer; }
-
+/* ----- END SECTION BUTTON INSCREVA-SE ------ */
+/* ----- SECTION CONTENT ----- */
 .icons-inform img {
   float: left;
   margin-right: 10px; }
@@ -5609,6 +5603,9 @@ footer {
 
   .mobile {
     display: block; }
+
+  .ball_cristo {
+    display: none; }
 
   .box_event {
     width: 80%;
