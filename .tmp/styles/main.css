@@ -5427,6 +5427,10 @@ body {
       font-size: 2.5vw; }
 
   /*END HEADER*/ }
+@media screen and (max-width: 991px) {
+  .wrapper-info-icons .content-box {
+    width: 75%;
+    text-align: center; } }
 @media screen and (max-width: 768px) {
   /*HEADER*/
   .box_event {
@@ -5443,7 +5447,9 @@ body {
     .box_local h4 {
       font-size: 2.5vw; }
 
-  /*END HEADER*/ }
+  /*END HEADER*/
+  .wrapper-info-icons .content-box {
+    width: 80%; } }
 @media screen and (max-width: 480px) {
   /*HEADER*/
   .box_event h2 {
@@ -5456,4 +5462,6 @@ body {
     .box_local h4 {
       font-size: 5vw; }
 
-  /*END HEADER*/ }
+  /*END HEADER*/
+  .wrapper-info-icons .content-box {
+    width: 70%; } }
