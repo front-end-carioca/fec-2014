@@ -5144,10 +5144,14 @@ button.close {
 .clear {
   clear: both; }
 
+.no_padding {
+  padding: 0; }
+
 /* STYLE INIT */
 body {
   margin: 0;
-  padding: 0; }
+  padding: 0;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif; }
 
 /* -------- HEADER -------- */
 .wrapper-header {
@@ -5270,6 +5274,9 @@ body {
 
 /* ------ END HEADER ------ */
 /* ------ SECTION BUTTON INSCREVA-SE --- */
+.container-section1 {
+  padding: 20px 15px; }
+
 .wrapper-button {
   width: 100%;
   height: auto;
@@ -5365,9 +5372,14 @@ body {
   .wrapper-info-icons .content-box {
     overflow: hidden;
     float: left;
-    width: 60%;
+    width: 65%;
     padding: 14px 13px;
     line-height: 22px; }
+    .wrapper-info-icons .content-box strong {
+      font-size: 18px; }
+    .wrapper-info-icons .content-box p {
+      color: #ccc;
+      font-size: 14px; }
   .wrapper-info-icons div.col-lg-3:hover {
     transition: all 1s;
     -webkit-transition: all 1s;
@@ -5381,6 +5393,37 @@ body {
         left: 14%; }
 
 /* ----- END SECTION INFORMAÇÕES ICONES ----- */
+/* ----- SECTION ABOUT / O EVENTO ----- */
+.container-section2 {
+  padding: 20px 15px; }
+
+.wrapper-about {
+  margin-bottom: 30px;
+  overflow: hidden; }
+  .wrapper-about h3 {
+    color: #194a6b;
+    font-size: 50px; }
+  .wrapper-about div.col-lg-12 p {
+    font-size: 17px;
+    color: #666; }
+
+.wrapper-oquevairolar h4 {
+  color: #194a6b;
+  font-size: 23px; }
+.wrapper-oquevairolar ul {
+  padding: 0;
+  list-style-position: inside;
+  overflow: hidden;
+  margin-top: 15px; }
+  .wrapper-oquevairolar ul li {
+    width: 50%;
+    float: left;
+    font-size: 17px; }
+
+.image-section2 img {
+  width: 100%; }
+
+/* ----- END SECTION ABOUT / O EVENTO ----- */
 /* Responsive */
 @media screen and (max-width: 1280px) {
   .wrapper-header header {
@@ -5395,7 +5438,10 @@ body {
         position: absolute;
         right: 200px; }
         .wrapper-header header .desktop .wrapper-nav ul li:nth-child(6) {
-          margin-left: 80px; } }
+          margin-left: 80px; }
+
+  .wrapper-info-icons .content-box {
+    width: 60%; } }
 @media screen and (max-width: 1060px) {
   /*HEADER*/
   .wrapper-header {
@@ -5449,7 +5495,13 @@ body {
 
   /*END HEADER*/
   .wrapper-info-icons .content-box {
-    width: 80%; } }
+    width: 80%; }
+
+  .wrapper-about h3 {
+    text-align: center; }
+
+  .wrapper-oquevairolar h4 {
+    text-align: center; } }
 @media screen and (max-width: 480px) {
   /*HEADER*/
   .box_event h2 {
@@ -5464,4 +5516,9 @@ body {
 
   /*END HEADER*/
   .wrapper-info-icons .content-box {
-    width: 70%; } }
+    width: 70%; }
+
+  .wrapper-oquevairolar ul li {
+    width: 100%;
+    text-align: center;
+    list-style: none; } }
