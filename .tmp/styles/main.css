@@ -5275,17 +5275,18 @@ body {
   position: relative; }
 
 .button-inscrevase {
-  width: 360px;
+  width: 310px;
   margin: 0 auto; }
 
 .btn-custom {
   background-color: #194a6b;
-  padding: 13px 50px;
+  width: 100%;
+  padding: 13px 23px;
   border: 0;
   border-radius: 7px;
   box-shadow: 1px 1px 0px 2px #0c3147;
   text-transform: capitalize;
-  font-size: 1.2vw;
+  font-size: 17px;
   color: #f2c51a;
   position: relative;
   -o-box-shadow: 1px 1px 0px 2px #0c3147;
@@ -5298,287 +5299,6 @@ body {
     opacity: 0.9; }
 
 /* ----- END SECTION BUTTON INSCREVA-SE ------ */
-/* ----- SECTION CONTENT ----- */
-.icons-inform img {
-  float: left;
-  margin-right: 10px; }
-
-.icons-inform span {
-  color: #ccc; }
-
-.icons-inform h4 {
-  margin-top: 10px;
-  margin-bottom: 5px; }
-
-.icons-inform {
-  float: left;
-  margin-left: 20px;
-  width: 255px;
-  margin-top: 40px; }
-
-#sobre-o-evento h1 {
-  font-size: 40px !important;
-  color: #1b4866 !important;
-  margin-top: 30px; }
-
-#sobre-o-evento h2 {
-  font-size: 23px !important;
-  color: #1b4866 !important;
-  margin-top: 50px;
-  margin-bottom: 20px; }
-
-#sobre-o-evento ul {
-  width: 250px;
-  float: left;
-  margin-left: -15px;
-  margin-right: 50px; }
-
-#sobre-o-evento ul li {
-  font-size: 16px !important;
-  margin-bottom: 15px; }
-
-#sobre-o-evento p {
-  font-size: 17px !important;
-  color: #666 !important; }
-
-#sobre-o-evento {
-  float: right; }
-
-#programacao-palestrantes {
-  margin-top: 120px; }
-
-#programacao-palestrantes a {
-  color: #f39b1a;
-  text-decoration: none; }
-
-#programacao-palestrantes h1 {
-  font-size: 40px !important;
-  color: #1b4866 !important;
-  margin-top: 30px; }
-
-#programacao-palestrantes .programacao {
-  width: 100%;
-  border: 1px solid #ccc;
-  margin-bottom: 20px !important; }
-
-#programacao-palestrantes .programacao .box-horario {
-  width: 200px;
-  height: 140px;
-  background-color: #f5f5f5;
-  float: left;
-  margin-right: 10px; }
-
-#programacao-palestrantes .programacao .descricao {
-  width: 700px;
-  height: 130px;
-  padding: 5px;
-  float: left;
-  margin-right: 10px; }
-
-#programacao-palestrantes .programacao .descricao h3 {
-  font-size: 18px !important;
-  margin-top: 5px;
-  margin-bottom: 3px;
-  color: #5a5a5a; }
-
-#programacao-palestrantes .programacao .descricao span {
-  font-size: 14px !important;
-  font-weight: bold;
-  color: #666;
-  margin-bottom: 15px !important; }
-
-#programacao-palestrantes .programacao .descricao p {
-  font-size: 14px !important;
-  color: #666;
-  font-weight: normal !important; }
-
-.box-horario span {
-  text-align: center;
-  color: #666;
-  font-weight: bold;
-  margin: 45px 0 0 75px;
-  position: absolute;
-  width: 50px; }
-
-#FotoPalestrante {
-  margin: 6px 0 0 13px;
-  float: left; }
-
-#FotoPalestrante img {
-  border-radius: 7px; }
-
-#BolaLogotipo {
-  width: 1150px;
-  margin: auto; }
-
-#BolaLogotipo img {
-  margin: -133px 0 0 850px; }
-
-.horarios {
-  border: 1px solid #ccc;
-  width: 100%;
-  text-align: center;
-  padding: 10px;
-  margin: 20px 0px;
-  color: #1b4866 !important;
-  font-size: 18px;
-  font-weight: bold; }
-
-.main-menu ul {
-  margin: -65px 0 0 165px; }
-
-.main-menu ul li {
-  list-style: none;
-  display: inline-block;
-  padding: 7px;
-  border-radius: 5px;
-  font-size: 16px;
-  margin: 21px 10px 0 11px; }
-
-.main-menu a {
-  color: #fff;
-  text-decoration: none;
-  padding: 5px; }
-
-.main-menu a:hover {
-  background: #f29b19;
-  cursor: pointer;
-  padding: 5px;
-  border-radius: 5px; }
-
-.action {
-  background: #f29b19;
-  cursor: pointer;
-  padding: 5px;
-  border-radius: 5px;
-  color: #fff !important; }
-
-#menufixo {
-  width: 100%;
-  height: 60px;
-  background-color: #1b4866;
-  position: fixed;
-  z-index: 9999;
-  display: none; }
-
-#centermenu {
-  width: 1200px;
-  margin: auto; }
-
-#centermenu img {
-  margin-top: 3px; }
-
-#patrocinio-ul li {
-  list-style: none;
-  float: left;
-  margin: 0 20px; }
-
-#apoio-ul li {
-  list-style: none;
-  float: left;
-  margin: 0 30px; }
-
-#apoio-ul {
-  width: 882px; }
-
-#section-patrocinador {
-  margin-top: 100px; }
-
-#section-patrocinador h1 {
-  font-size: 40px !important;
-  color: #1b4866 !important;
-  margin-top: 30px; }
-
-#section-patrocinador h3 {
-  font-size: 25px !important;
-  color: #1b4866 !important;
-  margin-top: 30px; }
-
-#section-location {
-  margin-top: 120px; }
-
-#section-location h1 {
-  font-size: 40px !important;
-  color: #1b4866 !important;
-  margin-top: 30px; }
-
-#dadosdolocal p {
-  width: 320px;
-  color: #a1a1a1; }
-
-#dadosdolocal span {
-  color: #666; }
-
-#bloco {
-  float: left; }
-
-#dadosdolocal img {
-  float: right;
-  margin: -120 0 0 40px; }
-
-#maps {
-  margin-top: 40px; }
-
-#section-hotel {
-  margin-top: 100px; }
-
-#section-hotel h1 {
-  font-size: 40px !important;
-  color: #1b4866 !important;
-  margin-top: 30px; }
-
-#BoxGeral {
-  width: 1015px;
-  margin: auto; }
-
-#BoxGeral img {
-  float: left;
-  margin-right: 10px;
-  margin-bottom: 50px; }
-
-#BoxGeral li {
-  list-style: none;
-  margin-bottom: 15px;
-  font-size: 14px; }
-
-#BoxGeral a {
-  color: #f29b19;
-  text-decoration: none;
-  font-weight: bold;
-  text-transform: uppercase; }
-
-#hotel01 {
-  width: 450px;
-  border: 1px solid #ccc;
-  padding: 15px;
-  float: left;
-  margin-right: 50px; }
-
-#hotel02 {
-  width: 450px;
-  border: 1px solid #ccc;
-  padding: 15px;
-  float: left; }
-
-#section-contato {
-  margin-top: 120px; }
-
-#section-contato h1 {
-  font-size: 40px !important;
-  color: #1b4866 !important;
-  margin-top: 30px; }
-
-footer {
-  background: #000;
-  opacity: 0.8;
-  color: #fff;
-  text-align: center;
-  font-size: 14px;
-  width: 100%;
-  height: 45px;
-  padding-top: 10px; }
-
-/* ----- SECAION CONNTENT  END ----- */
 /* Responsive */
 @media screen and (max-width: 1280px) {
   .wrapper-header header {
@@ -5595,6 +5315,7 @@ footer {
         .wrapper-header header .desktop .wrapper-nav ul li:nth-child(6) {
           margin-left: 80px; } }
 @media screen and (max-width: 1060px) {
+  /*HEADER*/
   .wrapper-header {
     height: 350px; }
 
@@ -5602,7 +5323,8 @@ footer {
     display: none; }
 
   .mobile {
-    display: block; }
+    display: block;
+    z-index: 9; }
 
   .ball_cristo {
     display: none; }
@@ -5621,8 +5343,11 @@ footer {
     top: 140px;
     min-width: inherit; }
     .box_local h4 {
-      font-size: 2.5vw; } }
+      font-size: 2.5vw; }
+
+  /*END HEADER*/ }
 @media screen and (max-width: 768px) {
+  /*HEADER*/
   .box_event {
     width: 90%;
     top: 100px; }
@@ -5635,8 +5360,11 @@ footer {
     width: 60%;
     top: 140px; }
     .box_local h4 {
-      font-size: 2.5vw; } }
+      font-size: 2.5vw; }
+
+  /*END HEADER*/ }
 @media screen and (max-width: 480px) {
+  /*HEADER*/
   .box_event h2 {
     font-size: 4.3vw; }
   .box_event h3 {
@@ -5645,4 +5373,6 @@ footer {
   .box_local {
     width: 80%; }
     .box_local h4 {
-      font-size: 5vw; } }
+      font-size: 5vw; }
+
+  /*END HEADER*/ }
