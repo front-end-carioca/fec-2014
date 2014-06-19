@@ -5157,7 +5157,8 @@ body {
   background-size: cover;
   -webkit-background-size: cover;
   -moz-background-size: cover;
-  -o-background-size: cover; }
+  -o-background-size: cover;
+  z-index: 1; }
   .wrapper-header header {
     width: 100%;
     height: 100%;
@@ -5181,7 +5182,8 @@ body {
   width: 100%;
   background: rgba(255, 255, 255, 0.7);
   position: fixed;
-  display: none; }
+  display: none;
+  z-index: 9; }
   .mobile h1 {
     margin: 0;
     width: 158px;
@@ -5299,6 +5301,86 @@ body {
     opacity: 0.9; }
 
 /* ----- END SECTION BUTTON INSCREVA-SE ------ */
+/* ----- SECTION INFORMAÇÕES ICONES ----- */
+.wrapper-info-icons {
+  position: relative;
+  top: 40px;
+  /*Hover icons*/ }
+  .wrapper-info-icons .icon-location_info {
+    position: relative;
+    display: block;
+    width: 80px;
+    height: 80px;
+    float: left;
+    border: 3px solid #b9b8bf;
+    border-radius: 50%; }
+    .wrapper-info-icons .icon-location_info i {
+      position: absolute;
+      top: 15%;
+      left: 16%;
+      font-size: 37px;
+      color: #3e647e; }
+  .wrapper-info-icons .icon-calendar_info {
+    position: relative;
+    display: block;
+    width: 80px;
+    height: 80px;
+    float: left;
+    border: 3px solid #b9b8bf;
+    border-radius: 50%; }
+    .wrapper-info-icons .icon-calendar_info i {
+      position: absolute;
+      top: 15%;
+      left: 16%;
+      font-size: 37px;
+      color: #3e647e; }
+  .wrapper-info-icons .icon-mic_info {
+    position: relative;
+    display: block;
+    width: 80px;
+    height: 80px;
+    float: left;
+    border: 3px solid #b9b8bf;
+    border-radius: 50%; }
+    .wrapper-info-icons .icon-mic_info i {
+      position: absolute;
+      top: 15%;
+      left: 17%;
+      font-size: 37px;
+      color: #3e647e; }
+  .wrapper-info-icons .icon-users_info {
+    position: relative;
+    display: block;
+    width: 80px;
+    height: 80px;
+    float: left;
+    border: 3px solid #b9b8bf;
+    border-radius: 50%; }
+    .wrapper-info-icons .icon-users_info i {
+      position: absolute;
+      top: 16%;
+      left: 14%;
+      font-size: 37px;
+      color: #3e647e; }
+  .wrapper-info-icons .content-box {
+    overflow: hidden;
+    float: left;
+    width: 60%;
+    padding: 14px 13px;
+    line-height: 22px; }
+  .wrapper-info-icons div.col-lg-3:hover {
+    transition: all 1s;
+    -webkit-transition: all 1s;
+    -moz-transition: all 1s;
+    -o-transition: all 1s; }
+    .wrapper-info-icons div.col-lg-3:hover span {
+      border: 5px dotted #3e647e; }
+      .wrapper-info-icons div.col-lg-3:hover span i {
+        color: #f2c51a;
+        top: 13%;
+        left: 14%; }
+
+/* ----- END SECTION INFORMAÇÕES ICONES ----- */
 /* Responsive */
 @media screen and (max-width: 1280px) {
   .wrapper-header header {
@@ -5323,8 +5405,7 @@ body {
     display: none; }
 
   .mobile {
-    display: block;
-    z-index: 9; }
+    display: block; }
 
   .ball_cristo {
     display: none; }

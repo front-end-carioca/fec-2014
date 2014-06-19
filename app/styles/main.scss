@@ -17,14 +17,14 @@ $azul: #1e3645;
 body {margin: 0; padding: 0}
 
 /* -------- HEADER -------- */
-.wrapper-header{ width: 100%; height: 543px; background: url(../images/bg-header.jpg) no-repeat center center fixed; background-size: cover; -webkit-background-size: cover; -moz-background-size: cover; -o-background-size: cover;
+.wrapper-header{ width: 100%; height: 543px; background: url(../images/bg-header.jpg) no-repeat center center fixed; background-size: cover; -webkit-background-size: cover; -moz-background-size: cover; -o-background-size: cover; z-index: 1;
     header{ width: 100%; height: 100%; background: url(../images/bg-cristo.png) no-repeat center center;
         .desktop{ width: 1237px; height: 108px; background: url(../images/bg-nav.png) no-repeat; margin: 0 auto; position: relative; top: 47px;
             h1{margin: 0; width: auto; height: auto; position: absolute; left: 178px; top: 25px;}
         }
     }
 }
-.mobile{ width: 100%; background: rgba(255, 255, 255, 0.7); position: fixed; display: none;
+.mobile{ width: 100%; background: rgba(255, 255, 255, 0.7); position: fixed; display: none; z-index: 9;
     h1{ margin: 0; width: 158px; float: left;}
 }
 #trigger-overlay{ position: absolute; right: 10px; top: 10px;
@@ -50,8 +50,6 @@ body {margin: 0; padding: 0}
 }
 .ball_cristo { position: absolute; right: 50px; top: 125px; z-index: 1;}
 /* ------ END HEADER ------ */
-
-
 /* ------ SECTION BUTTON INSCREVA-SE --- */
 .wrapper-button{ width: 100%; height: auto; padding: 10px; position: relative;}
 .button-inscrevase { width: 310px; margin: 0 auto;}
@@ -82,7 +80,35 @@ body {margin: 0; padding: 0}
   }
 }
 /* ----- END SECTION BUTTON INSCREVA-SE ------ */
+/* ----- SECTION INFORMAÇÕES ICONES ----- */
 
+.wrapper-info-icons{ position: relative; top: 40px;
+  .icon-location_info{ position: relative; display: block; width: 80px; height: 80px; float: left; border: 3px solid #b9b8bf; border-radius: 50%; 
+    i{position: absolute; top: 15%; left: 16%; font-size: 37px; color: #3e647e;}
+  }
+  .icon-calendar_info{ position: relative; display: block; width: 80px; height: 80px; float: left; border: 3px solid #b9b8bf; border-radius: 50%; 
+    i{position: absolute; top: 15%; left: 16%; font-size: 37px; color: #3e647e;}
+  }
+  .icon-mic_info{ position: relative; display: block; width: 80px; height: 80px; float: left; border: 3px solid #b9b8bf; border-radius: 50%; 
+    i{position: absolute; top: 15%; left: 17%; font-size: 37px; color: #3e647e;}
+  }
+  .icon-users_info{ position: relative; display: block; width: 80px; height: 80px; float: left; border: 3px solid #b9b8bf; border-radius: 50%; 
+    i{position: absolute; top: 16%; left: 14%; font-size: 37px; color: #3e647e;}
+  }
+  .content-box { overflow: hidden; float: left; width: 60%; padding: 14px 13px; line-height: 22px;}
+  /*Hover icons*/
+  div.col-lg-3{
+    &:hover{ transition: all 1s; -webkit-transition: all 1s; -moz-transition: all 1s; -o-transition: all 1s;
+      span{ border: 5px dotted #3e647e;
+        i{ color: #f2c51a; top: 13%; left: 14%;}
+      }
+    }
+  }
+
+
+}
+
+/* ----- END SECTION INFORMAÇÕES ICONES ----- */
 
 
 /* Responsive */
@@ -103,7 +129,7 @@ body {margin: 0; padding: 0}
     /*HEADER*/
     .wrapper-header{ height: 350px;}
     .desktop{display: none;}
-    .mobile{display: block; z-index: 9;}
+    .mobile{display: block;}
     .ball_cristo{ display: none;}
     .box_event{ width: 80%; top: 100px; min-width: inherit;
         h2{ font-size: 4vw;}
@@ -136,6 +162,6 @@ body {margin: 0; padding: 0}
         h4{font-size: 5vw;}
    }
    /*END HEADER*/
-   
+
 }
 
