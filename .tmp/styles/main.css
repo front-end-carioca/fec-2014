@@ -5272,6 +5272,12 @@ body {
   top: 125px;
   z-index: 1; }
 
+.overlay-bg {
+  background: #fff;
+  position: relative;
+  width: 100%;
+  height: 100%; }
+
 /* ------ END HEADER ------ */
 /* ------ SECTION BUTTON INSCREVA-SE --- */
 .container-section1 {
@@ -5424,6 +5430,109 @@ body {
   width: 100%; }
 
 /* ----- END SECTION ABOUT / O EVENTO ----- */
+/* ----- SECTION SECTION PROGRAMAÇÃO ----- */
+.container-section3 {
+  padding: 20px 15px; }
+
+.wrapper-pgm {
+  margin-bottom: 30px;
+  overflow: hidden; }
+  .wrapper-pgm h3 {
+    color: #194a6b;
+    font-size: 50px;
+    margin: 0; }
+  .wrapper-pgm .wrapper-horarios div.horarios:nth-child(1) {
+    margin-top: 20px; }
+  .wrapper-pgm .wrapper-horarios .horarios {
+    border: 1px solid #ccc;
+    text-align: center;
+    padding: 10px;
+    margin: 10px 0px;
+    color: #1b4866;
+    font-size: 18px;
+    font-weight: bold; }
+    .wrapper-pgm .wrapper-horarios .horarios:hover {
+      background: #d3d3d3;
+      transition: all 1s;
+      -webkit-transition: all 1s;
+      -moz-transition: all 1s;
+      -o-transition: all 1s; }
+      .wrapper-pgm .wrapper-horarios .horarios:hover p {
+        text-decoration: underline; }
+      .wrapper-pgm .wrapper-horarios .horarios:hover p:before {
+        content: url(../images/clock.svg);
+        display: block;
+        position: absolute;
+        top: 5px; }
+    .wrapper-pgm .wrapper-horarios .horarios p {
+      margin: 0; }
+  .wrapper-pgm .wrapper-horarios .programacao {
+    border: 1px solid #ccc;
+    position: relative;
+    overflow: hidden;
+    margin-bottom: 10px; }
+    .wrapper-pgm .wrapper-horarios .programacao div {
+      float: left; }
+    .wrapper-pgm .wrapper-horarios .programacao .box-horario {
+      background-color: #f5f5f5;
+      padding: 15px 15px;
+      position: absolute;
+      height: 100%; }
+      .wrapper-pgm .wrapper-horarios .programacao .box-horario span {
+        color: #666;
+        font-weight: 700;
+        width: 100%;
+        display: block; }
+      .wrapper-pgm .wrapper-horarios .programacao .box-horario center {
+        position: absolute;
+        top: 32%;
+        left: 36%; }
+    .wrapper-pgm .wrapper-horarios .programacao .descricao {
+      padding: 10px; }
+      .wrapper-pgm .wrapper-horarios .programacao .descricao h3 {
+        font-size: 18px;
+        color: #5a5a5a;
+        margin: 10px 0 5px; }
+      .wrapper-pgm .wrapper-horarios .programacao .descricao span {
+        font-size: 14px;
+        font-weight: 700;
+        color: #666;
+        margin-bottom: 15px; }
+        .wrapper-pgm .wrapper-horarios .programacao .descricao span a {
+          color: #f39b1a;
+          text-decoration: none; }
+      .wrapper-pgm .wrapper-horarios .programacao .descricao p {
+        font-size: 14px;
+        color: #666;
+        font-weight: 400;
+        margin: 10px 0 0; }
+    .wrapper-pgm .wrapper-horarios .programacao .picture-palestrante {
+      padding: 5px;
+      position: absolute;
+      right: 0;
+      bottom: 0;
+      top: 0;
+      overflow: hidden; }
+      .wrapper-pgm .wrapper-horarios .programacao .picture-palestrante img {
+        width: 100%;
+        height: 107%;
+        border-radius: 5px; }
+    .wrapper-pgm .wrapper-horarios .programacao:hover {
+      transition: all 1s;
+      -webkit-transition: all 1s;
+      -moz-transition: all 1s;
+      -o-transition: all 1s;
+      background: #f5f5f5; }
+      .wrapper-pgm .wrapper-horarios .programacao:hover .box-horario {
+        background: #d3d3d3; }
+        .wrapper-pgm .wrapper-horarios .programacao:hover .box-horario span:nth-child(1):before {
+          content: url(../images/clock.svg);
+          display: block;
+          position: absolute;
+          top: 13px;
+          left: -50px; }
+
+/* ----- END SECTION PROGRAMAÇÃO ----- */
 /* Responsive */
 @media screen and (max-width: 1280px) {
   .wrapper-header header {
@@ -5476,7 +5585,36 @@ body {
 @media screen and (max-width: 991px) {
   .wrapper-info-icons .content-box {
     width: 75%;
-    text-align: center; } }
+    text-align: center; }
+
+  .wrapper-pgm .wrapper-horarios .programacao div {
+    float: none; }
+  .wrapper-pgm .wrapper-horarios .programacao .box-horario {
+    padding: 5px;
+    position: relative;
+    height: 50px;
+    width: 100%; }
+    .wrapper-pgm .wrapper-horarios .programacao .box-horario span {
+      width: inherit;
+      display: inline; }
+    .wrapper-pgm .wrapper-horarios .programacao .box-horario center {
+      position: relative;
+      top: inherit;
+      left: inherit;
+      padding: 10px; }
+  .wrapper-pgm .wrapper-horarios .programacao .picture-palestrante {
+    position: absolute;
+    right: 20px;
+    bottom: 25px;
+    top: inherit;
+    width: 150px;
+    height: 150px; }
+    .wrapper-pgm .wrapper-horarios .programacao .picture-palestrante img {
+      height: 100%;
+      border-radius: 50%; }
+  .wrapper-pgm .wrapper-horarios .programacao:hover .box-horario span:nth-child(1):before {
+    top: 5px;
+    left: 5px; } }
 @media screen and (max-width: 768px) {
   /*HEADER*/
   .box_event {
@@ -5501,7 +5639,17 @@ body {
     text-align: center; }
 
   .wrapper-oquevairolar h4 {
-    text-align: center; } }
+    text-align: center; }
+
+  .wrapper-pgm .wrapper-horarios .programacao .picture-palestrante {
+    position: absolute;
+    right: 0px;
+    bottom: inherit;
+    top: 0px;
+    width: 65px;
+    height: auto; }
+    .wrapper-pgm .wrapper-horarios .programacao .picture-palestrante img {
+      border-radius: 5px; } }
 @media screen and (max-width: 480px) {
   /*HEADER*/
   .box_event h2 {
@@ -5521,4 +5669,9 @@ body {
   .wrapper-oquevairolar ul li {
     width: 100%;
     text-align: center;
-    list-style: none; } }
+    list-style: none; }
+
+  .wrapper-pgm .wrapper-horarios .horarios:hover p:before {
+    display: none; }
+  .wrapper-pgm .wrapper-horarios .programacao:hover .box-horario span:nth-child(1):before {
+    display: none; } }
