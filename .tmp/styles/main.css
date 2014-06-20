@@ -5533,6 +5533,84 @@ body {
           left: -50px; }
 
 /* ----- END SECTION PROGRAMAÇÃO ----- */
+/* ----- SECTION SECTION PATROCINIO ----- */
+.container-section4 {
+  padding: 20px 15px; }
+
+.wrapper-patrocinio {
+  margin-bottom: 30px;
+  overflow: hidden; }
+  .wrapper-patrocinio h3 {
+    color: #194a6b;
+    font-size: 50px;
+    margin: 0; }
+  .wrapper-patrocinio ul {
+    list-style: none;
+    overflow: hidden;
+    padding: 0;
+    margin-top: 20px; }
+    .wrapper-patrocinio ul li {
+      float: left;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+      margin-right: 30px; }
+      .wrapper-patrocinio ul li:hover {
+        border: 1px solid #f39b1a; }
+      .wrapper-patrocinio ul li a {
+        overflow: hidden;
+        display: block;
+        padding: 50px 0; }
+
+.wrapper-apoio1 {
+  margin-bottom: 30px;
+  overflow: hidden; }
+  .wrapper-apoio1 h4 {
+    color: #194a6b;
+    font-size: 30px;
+    margin: 0; }
+  .wrapper-apoio1 ul {
+    list-style: none;
+    overflow: hidden;
+    padding: 0;
+    margin-top: 20px; }
+    .wrapper-apoio1 ul li {
+      float: left;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+      margin-right: 30px;
+      margin-bottom: 10px; }
+      .wrapper-apoio1 ul li:hover {
+        border: 1px solid #f39b1a; }
+      .wrapper-apoio1 ul li a {
+        overflow: hidden;
+        display: block;
+        padding: 5px; }
+
+.wrapper-apoio2 {
+  margin-bottom: 30px;
+  overflow: hidden; }
+  .wrapper-apoio2 h4 {
+    color: #194a6b;
+    font-size: 30px;
+    margin: 0; }
+  .wrapper-apoio2 ul {
+    list-style: none;
+    overflow: hidden;
+    padding: 0;
+    margin-top: 20px; }
+    .wrapper-apoio2 ul li {
+      float: left;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+      margin-right: 30px; }
+      .wrapper-apoio2 ul li:hover {
+        border: 1px solid #f39b1a; }
+      .wrapper-apoio2 ul li a {
+        overflow: hidden;
+        display: block;
+        padding: 5px; }
+
+/* ----- END SECTION SECTION PATROCINIO ----- */
 /* Responsive */
 @media screen and (max-width: 1280px) {
   .wrapper-header header {
@@ -5641,6 +5719,9 @@ body {
   .wrapper-oquevairolar h4 {
     text-align: center; }
 
+  .wrapper-pgm h3 {
+    text-align: center; }
+
   .wrapper-pgm .wrapper-horarios .programacao .picture-palestrante {
     position: absolute;
     right: 0px;
@@ -5649,7 +5730,22 @@ body {
     width: 65px;
     height: auto; }
     .wrapper-pgm .wrapper-horarios .programacao .picture-palestrante img {
-      border-radius: 5px; } }
+      border-radius: 5px; }
+
+  .wrapper-patrocinio h3 {
+    text-align: center; }
+  .wrapper-patrocinio ul li {
+    margin: 1px 35%; }
+
+  .wrapper-apoio1 h4 {
+    text-align: center; }
+  .wrapper-apoio1 ul li {
+    margin: 1% 7% 1% 9%; }
+
+  .wrapper-apoio2 h4 {
+    text-align: center; }
+  .wrapper-apoio2 ul li {
+    margin: 1% 7% 1% 9%; } }
 @media screen and (max-width: 480px) {
   /*HEADER*/
   .box_event h2 {
