@@ -5611,6 +5611,43 @@ body {
         padding: 5px; }
 
 /* ----- END SECTION SECTION PATROCINIO ----- */
+/* ----- SECTION SECTION LOCAL ----- */
+.container-section5 {
+  padding: 20px 15px; }
+
+.wrapper-local h3 {
+  color: #194a6b;
+  font-size: 50px;
+  margin: 0; }
+.wrapper-local .info-local h2 {
+  font-size: 30px;
+  text-transform: uppercase; }
+.wrapper-local .info-local p {
+  color: #a1a1a1;
+  font-size: 17px; }
+.wrapper-local .info-local .p-data {
+  font-size: 14px;
+  color: #666;
+  font-weight: 700;
+  margin: 0; }
+  .wrapper-local .info-local .p-data span {
+    float: left;
+    font-weight: 700;
+    color: #666;
+    margin-right: 7px;
+    text-transform: uppercase; }
+.wrapper-local .info-local .p-hora {
+  font-size: 14px;
+  color: #666;
+  font-weight: 700; }
+  .wrapper-local .info-local .p-hora span {
+    float: left;
+    font-weight: 700;
+    color: #666;
+    margin-right: 7px;
+    text-transform: uppercase; }
+
+/* ----- END SECTION SECTION LOCAL ----- */
 /* Responsive */
 @media screen and (max-width: 1280px) {
   .wrapper-header header {
@@ -5745,7 +5782,10 @@ body {
   .wrapper-apoio2 h4 {
     text-align: center; }
   .wrapper-apoio2 ul li {
-    margin: 1% 7% 1% 9%; } }
+    margin: 1% 7% 1% 9%; }
+
+  .wrapper-local h3 {
+    text-align: center; } }
 @media screen and (max-width: 480px) {
   /*HEADER*/
   .box_event h2 {
@@ -5770,4 +5810,7 @@ body {
   .wrapper-pgm .wrapper-horarios .horarios:hover p:before {
     display: none; }
   .wrapper-pgm .wrapper-horarios .programacao:hover .box-horario span:nth-child(1):before {
-    display: none; } }
+    display: none; }
+
+  .wrapper-local .image-local img {
+    width: 100%; } }

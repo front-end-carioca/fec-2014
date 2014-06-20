@@ -206,6 +206,23 @@ body {margin: 0; padding: 0; font-family: "Helvetica Neue", Helvetica, Arial, sa
   }
 }
 /* ----- END SECTION SECTION PATROCINIO ----- */
+/* ----- SECTION SECTION LOCAL ----- */
+.container-section5 {padding: 20px 15px;}
+.wrapper-local{
+  h3{ color: #194a6b; font-size: 50px; margin: 0;}
+  .info-local{
+    h2{ font-size: 30px; text-transform: uppercase;}
+    p{color: #a1a1a1; font-size: 17px;}
+      .p-data{ font-size: 14px; color: #666; font-weight: 700; margin: 0;
+        span{float: left; font-weight: 700; color: #666; margin-right: 7px; text-transform: uppercase;}
+      }
+      .p-hora{ font-size: 14px; color: #666; font-weight: 700;
+        span{float: left; font-weight: 700; color: #666; margin-right: 7px; text-transform: uppercase;} 
+      }
+    }
+  }
+/* ----- END SECTION SECTION LOCAL ----- */
+
 
 
 
@@ -317,7 +334,9 @@ body {margin: 0; padding: 0; font-family: "Helvetica Neue", Helvetica, Arial, sa
     ul{
       li{ margin: 1% 7% 1% 9%;}
     }
-
+  }
+  .wrapper-local{
+    h3{ text-align: center;}
   }
 
 }
@@ -339,6 +358,7 @@ body {margin: 0; padding: 0; font-family: "Helvetica Neue", Helvetica, Arial, sa
       li{ width: 100%; text-align: center; list-style: none;}
     }
   }
+
   .wrapper-pgm{
     .wrapper-horarios{
       .horarios{
@@ -356,5 +376,13 @@ body {margin: 0; padding: 0; font-family: "Helvetica Neue", Helvetica, Arial, sa
     }
   }
 
+  .wrapper-local{
+    .image-local{
+      img{ width: 100%;}
+    }
+  }
+
 }
 
+@media screen and (max-width: 320px) {
+}
