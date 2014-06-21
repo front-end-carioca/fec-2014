@@ -5646,8 +5646,72 @@ body {
     color: #666;
     margin-right: 7px;
     text-transform: uppercase; }
+.wrapper-local .image-local img {
+  width: 100%; }
 
 /* ----- END SECTION SECTION LOCAL ----- */
+/* ----- SECTION SECTION GMAPS ----- */
+.container-section6 {
+  padding: 20px 15px; }
+
+.overlay-gmaps {
+  background: transparent;
+  position: relative;
+  width: 100%;
+  height: 450px;
+  top: 450px;
+  margin-top: -450px;
+  cursor: all-scroll; }
+
+.gmaps iframe {
+  width: 100%;
+  height: 450px; }
+
+/* ----- END SECTION SECTION GMAPS ----- */
+/* ----- SECTION SECTION HOSPEDAGEM ----- */
+.container-section7 {
+  padding: 20px 15px;
+  margin-top: 20px; }
+
+.wrapper-hospedar h3 {
+  color: #194a6b;
+  font-size: 50px;
+  margin: 0; }
+.wrapper-hospedar .boxht {
+  border: 1px solid #666;
+  position: relative;
+  overflow: hidden;
+  margin-top: 35px; }
+  .wrapper-hospedar .boxht .imagem-hospedagem {
+    padding: 15px 5px; }
+  .wrapper-hospedar .boxht .endereco-hospedagem {
+    padding: 10px; }
+    .wrapper-hospedar .boxht .endereco-hospedagem ul {
+      list-style: none;
+      padding: 0; }
+      .wrapper-hospedar .boxht .endereco-hospedagem ul li {
+        line-height: 20px; }
+        .wrapper-hospedar .boxht .endereco-hospedagem ul li strong {
+          padding-right: 5px; }
+        .wrapper-hospedar .boxht .endereco-hospedagem ul li a {
+          color: #f39b1a; }
+          .wrapper-hospedar .boxht .endereco-hospedagem ul li a:hover {
+            text-decoration: underline; }
+
+/* ----- END SECTION SECTION HOSPEDAGEM ----- */
+footer {
+  width: 100%;
+  height: auto;
+  min-height: 40px;
+  padding: 10px;
+  background: rgba(0, 0, 0, 0.8);
+  color: #fff !important; }
+  footer .wrapper-footer {
+    overflow: hidden;
+    width: 50%;
+    margin: auto;
+    text-align: center; }
+
 /* Responsive */
 @media screen and (max-width: 1280px) {
   .wrapper-header header {
@@ -5729,7 +5793,14 @@ body {
       border-radius: 50%; }
   .wrapper-pgm .wrapper-horarios .programacao:hover .box-horario span:nth-child(1):before {
     top: 5px;
-    left: 5px; } }
+    left: 5px; }
+
+  .wrapper-hospedar .boxht .imagem-hospedagem {
+    padding-right: 14px 5px; }
+    .wrapper-hospedar .boxht .imagem-hospedagem img {
+      display: block;
+      width: 45%;
+      margin: auto; } }
 @media screen and (max-width: 768px) {
   /*HEADER*/
   .box_event {
@@ -5785,6 +5856,9 @@ body {
     margin: 1% 7% 1% 9%; }
 
   .wrapper-local h3 {
+    text-align: center; }
+
+  .wrapper-hospedar h3 {
     text-align: center; } }
 @media screen and (max-width: 480px) {
   /*HEADER*/

@@ -220,12 +220,49 @@ body {margin: 0; padding: 0; font-family: "Helvetica Neue", Helvetica, Arial, sa
         span{float: left; font-weight: 700; color: #666; margin-right: 7px; text-transform: uppercase;} 
       }
     }
+   .image-local{
+    img{width: 100%;}
+   } 
   }
 /* ----- END SECTION SECTION LOCAL ----- */
+/* ----- SECTION SECTION GMAPS ----- */
+.container-section6 {padding: 20px 15px;}
+.overlay-gmaps{
+  background: transparent;
+  position: relative;
+  width: 100%;
+  height: 450px;
+  top: 450px;
+  margin-top: -450px;
+  cursor: all-scroll;
+}
+.gmaps{
+  iframe{ width: 100%; height: 450px;}
+}
+/* ----- END SECTION SECTION GMAPS ----- */
+/* ----- SECTION SECTION HOSPEDAGEM ----- */
+.container-section7 {padding: 20px 15px; margin-top: 20px;}
+.wrapper-hospedar{
+  h3{ color: #194a6b; font-size: 50px; margin: 0;}
+  .boxht{ border: 1px solid #666; position: relative; overflow: hidden; margin-top: 35px;
+    .imagem-hospedagem{ padding: 15px 5px;}
+    .endereco-hospedagem{ padding: 10px;
+      ul{ list-style: none; padding: 0;
+        li{ line-height: 20px;
+          strong{ padding-right: 5px;}
+          a{ color: #f39b1a;
+            &:hover{ text-decoration: underline;}
+          }
+        }
+      }
+    }
+  }
+}
+/* ----- END SECTION SECTION HOSPEDAGEM ----- */
 
-
-
-
+footer{ width: 100%; height: auto; min-height: 40px; padding: 10px; background: rgba(0, 0, 0, 0.8); color: #fff !important;
+  .wrapper-footer{ overflow: hidden; width: 50%; margin: auto; text-align: center;}
+}
 
 /* Responsive */
 @media screen and (max-width: 1280px) {
@@ -279,6 +316,14 @@ body {margin: 0; padding: 0; font-family: "Helvetica Neue", Helvetica, Arial, sa
             span:nth-child(1):before{top: 5px; left: 5px;}
           }
         }
+      }
+    }
+  }
+
+  .wrapper-hospedar{
+    .boxht{ 
+      .imagem-hospedagem{ padding-right: 14px 5px;
+        img{ display: block; width: 45%; margin: auto;}
       }
     }
   }
@@ -336,6 +381,9 @@ body {margin: 0; padding: 0; font-family: "Helvetica Neue", Helvetica, Arial, sa
     }
   }
   .wrapper-local{
+    h3{ text-align: center;}
+  }
+  .wrapper-hospedar{
     h3{ text-align: center;}
   }
 
