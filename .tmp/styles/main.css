@@ -5134,6 +5134,174 @@ button.close {
 @media print {
   .hidden-print {
     display: none !important; } }
+/* Overlay style */
+.overlay {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background: rgba(33, 57, 71, 0.955); }
+
+/* Overlay closing cross */
+.overlay .overlay-close {
+  width: 80px;
+  height: 80px;
+  position: absolute;
+  right: 20px;
+  top: 20px;
+  overflow: hidden;
+  border: none;
+  background: url(../images/cross.png) no-repeat center center;
+  text-indent: 200%;
+  color: transparent;
+  outline: none;
+  z-index: 100; }
+
+/* Menu style */
+.overlay nav {
+  text-align: center;
+  position: relative;
+  top: 50%;
+  height: 60%;
+  -webkit-transform: translateY(-50%);
+  transform: translateY(-50%); }
+
+.overlay ul {
+  list-style: none;
+  padding: 0;
+  margin: 0 auto;
+  display: inline-block;
+  height: 60%;
+  position: relative; }
+
+.overlay ul li {
+  display: block;
+  height: 20%;
+  height: calc(100% / 5);
+  min-height: 54px;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden; }
+
+.overlay ul li a {
+  font-size: 40px;
+  letter-spacing: 2px;
+  font-weight: 300;
+  display: block;
+  color: #fff;
+  transition: color 0.2s; }
+
+.overlay ul li a:hover,
+.overlay ul li a:focus {
+  color: #f29b19; }
+
+/* Effects */
+.overlay-slidedown {
+  visibility: hidden;
+  -webkit-transform: translateY(-100%);
+  transform: translateY(-100%);
+  transition: -webkit-transform 0.4s ease-in-out, visibility 0s 0.4s;
+  transition: transform 0.4s ease-in-out, visibility 0s 0.4s; }
+
+.overlay-slidedown.open {
+  visibility: visible;
+  -webkit-transform: translateY(0%);
+  transform: translateY(0%);
+  transition: -webkit-transform 0.4s ease-in-out;
+  transition: transform 0.4s ease-in-out;
+  z-index: 10; }
+
+@media screen and (max-height: 30.5em) {
+  .overlay nav {
+    height: 70%;
+    font-size: 34px; }
+
+  .overlay ul li {
+    min-height: 34px; } }
+@font-face {
+  font-family: 'frontendcarioca';
+  src: url("../font/frontendcarioca.eot?48380195");
+  src: url("../font/frontendcarioca.eot?48380195#iefix") format("embedded-opentype"), url("../font/frontendcarioca.woff?48380195") format("woff"), url("../font/frontendcarioca.ttf?48380195") format("truetype"), url("../font/frontendcarioca.svg?48380195#frontendcarioca") format("svg");
+  font-weight: normal;
+  font-style: normal; }
+/* Chrome hack: SVG is rendered more smooth in Windozze. 100% magic, uncomment if you need it. */
+/* Note, that will break hinting! In other OS-es font will be not as sharp as it could be */
+/*
+@media screen and (-webkit-min-device-pixel-ratio:0) {
+  @font-face {
+    font-family: 'frontendcarioca';
+    src: url('../font/frontendcarioca.svg?48380195#frontendcarioca') format('svg');
+  }
+}
+*/
+[class^="icon-"]:before, [class*=" icon-"]:before {
+  font-family: "frontendcarioca";
+  font-style: normal;
+  font-weight: normal;
+  speak: none;
+  display: inline-block;
+  text-decoration: inherit;
+  width: 1em;
+  margin-right: .2em;
+  text-align: center;
+  /* opacity: .8; */
+  /* For safety - reset parent styles, that can break glyph codes*/
+  font-variant: normal;
+  text-transform: none;
+  /* fix buttons height, for twitter bootstrap */
+  line-height: 1em;
+  /* Animation center compensation - margins should be symmetric */
+  /* remove if not needed */
+  margin-left: .2em;
+  /* you can be more comfortable with increased icons size */
+  /* font-size: 120%; */
+  /* Uncomment for 3D effect */
+  /* text-shadow: 1px 1px 1px rgba(127, 127, 127, 0.3); */ }
+
+.icon-users:before {
+  content: '\e800'; }
+
+/* '' */
+.icon-calendar:before {
+  content: '\e801'; }
+
+/* '' */
+.icon-mic:before {
+  content: '\e802'; }
+
+/* '' */
+.icon-location:before {
+  content: '\e803'; }
+
+/* '' */
+.icon-users-1:before {
+  content: '\e804'; }
+
+/* '' */
+.icon-location-1:before {
+  content: '\e805'; }
+
+/* '' */
+.icon-github-circled:before {
+  content: '\e806'; }
+
+/* '' */
+.icon-calendar-1:before {
+  content: '\e807'; }
+
+/* '' */
+.icon-mic-1:before {
+  content: '\e808'; }
+
+/* '' */
+.icon-twitter-circled:before {
+  content: '\e809'; }
+
+/* '' */
+.icon-facebook-circled:before {
+  content: '\e80a'; }
+
+/* '' */
 /* -------- VARIAVEIS -------- */
 .browsehappy {
   margin: 0.2em 0;
