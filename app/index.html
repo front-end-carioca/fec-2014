@@ -18,6 +18,9 @@
         <link rel="stylesheet" href="styles/main.css">
         <!-- endbuild -->
         <!-- build:js scripts/vendor/modernizr.js -->
+        <script type="text/javascript" src="scripts/jquery-1.11.0.min.js"></script>
+        <script type="text/javascript" src="scripts/jquery.smooth-scroll.min.js"></script>
+        <script type="text/javascript" src="scripts/script.js"></script>
         <script src="../bower_components/modernizr/modernizr.js"></script>
         <!-- endbuild -->
 
@@ -31,14 +34,12 @@
             <button type="button" class="overlay-close">Close</button>
             <nav>
                 <ul>
-                    <li><a href="#1">Home</a></li>
-                    <li><a href="#2">Sobre</a></li>
-                    <li><a href="#3">Palestrantes</a></li>
-                    <li><a href="#4">Programação</a></li>
-                    <li><a href="#5">Local</a></li>
-                    <li><a href="#6">Patrocínio</a></li>
-                    <li><a href="#7">Contato</a></li>
-                    <li><a href="#8">Imprensa</a></li>
+                    <li><a href="#1" class="navegacao" id="001">Home</a></li>
+                    <li><a href="#2" class="navegacao" id="002">O Evento</a></li>
+                    <li><a href="#4" class="navegacao" id="003">Programação</a></li>
+                    <li><a href="#6" class="navegacao" id="004">Patrocínio</a></li>
+                    <li><a href="#5" class="navegacao" id="006">Local</a></li>
+                    <li><a href="#6" class="navegacao" id="005">Onde se Hospedar</a></li>
                 </ul>
             </nav>
         </div>
@@ -49,6 +50,26 @@
             </h1>
             <a id="trigger-overlay" type="button"></a>
         </nav>
+
+        <!-- main menu fixed -->
+        <div id="menufixo">
+            <div id="centermenu">
+                <img src="images/logo-branca.png" alt="Logo Front-End Carioca">
+                <div class="main-menu">
+                    <ul>
+                        <li><a href="#1" class="navegacao" id="001">Home</a></li>
+                        <li><a href="#2" class="navegacao" id="002">O Evento</a></li>
+                        <li><a href="#4" class="navegacao" id="003">Programação</a></li>
+                        <li><a href="#6" class="navegacao" id="004">Patrocínio</a></li>
+                        <li><a href="#5" class="navegacao" id="006">Local</a></li>
+                        <li><a href="#6" class="navegacao" id="005">Onde se Hospedar</a></li>
+                        <!--<li><a href="#7">Contato</a></li>-->
+                    </ul>
+                </div>
+            </div>
+        </div><!-- menu fixo -->
+
+
         <div class="wrapper-header">
             <header>
                 <nav class="desktop">
@@ -59,14 +80,12 @@
                     </h1>
                     <div class="wrapper-nav">
                         <ul>
-                            <li><a href="#1">Home</a></li>
-                            <li><a href="#2">Sobre</a></li>
-                            <li><a href="#3">Palestrantes</a></li>
-                            <li><a href="#4">Programação</a></li>
-                            <li><a href="#5">Local</a></li>
-                            <li><a href="#6">Patrocínio</a></li>
-                            <li><a href="#7">Contato</a></li>
-                            <li><a href="#8">Imprensa</a></li>
+                            <li><a href="#1" class="navegacao" id="001">Home</a></li>
+                            <li><a href="#2" class="navegacao" id="002">O Evento</a></li>
+                            <li><a href="#4" class="navegacao" id="003">Programação</a></li>
+                            <li><a href="#6" class="navegacao" id="004">Patrocínio</a></li>
+                            <li><a href="#5" class="navegacao" id="006">Local</a></li>
+                            <li><a href="#6" class="navegacao" id="005">Onde se Hospedar</a></li>
                         </ul>
                     </div>
                 </nav>
@@ -217,9 +236,9 @@
                                 </center>
                             </div>
                             <div class="descricao col-lg-8 col-md-8 col-lg-offset-2 col-md-offset-2 col-sm-9">
-                                <h3>Desenvolvimento Front End focado em criação de sistemas web</h3>
+                                <h3>Desenvolvimento Front End focado em criação de sistemas web - no que ficar ligado?</h3>
                                 <span>Full Stack Web Developer na Prefeitura RJ / Pedro Polisenso - Twitter <a href="https://twitter.com/pedropolisenso" target="_blanck">@pedropoliseno</a> </span>
-                                <p>É Full Stack Web Developer na Prefeitura do RJ. Trabalha como desenvolvedor há mais de 7 anos, estuda Análise de Sistemas no Instituto Infnet. Contribui para 4 organizações open source e 1 privada. É organizador do “Front End Carioca”, está envolvido nas comunidades “Front End Brasil” e “RioJS”. Envolveu-se com projetos como: Lápis Vermelho (Barra Shopping), KM de Vantagens - Brasileirão 2013, SUS, SINAN-RIO e Plataforma SMS.</p>
+                                <p>Está como Full Stack Web Developer na Prefeitura do RJ. Trabalha como desenvolvedor há mais de 7 anos, estuda Análise de Sistemas no Instituto Infnet. Contribui para 4 organizações open source e 1 privada. É organizador do “Front End Carioca”, está envolvido nas comunidades “Front End Brasil” e “RioJS”. Envolveu-se com projetos como: Lápis Vermelho (Barra Shopping), KM de Vantagens - Brasileirão 2013, SUS, SINAN-RIO e Plataforma SMS.</p>
                             </div>
                             <div class="picture-palestrante col-lg-2 col-md-2">
                                 <img src="images/palestrantes/pedropolisenso.jpg" border="0" alt="Pedro Polisenso">
@@ -316,7 +335,7 @@
                             </div>
                             <div class="descricao col-lg-8 col-md-8 col-lg-offset-2 col-md-offset-2 col-sm-9">
                                 <h3>Atomic Design com pré-processadores</h3>
-                                <span>Owner/ President na empresa Suissa Corp / Jean Carlo (Suissa) - Twitter <a href="https://twitter.com/osuissa" target="_blanck">@osuissa</a> </span>
+                                <span>Owner/ Presidente na empresa Webschool.io / Jean Carlo (Suissa) - Twitter <a href="https://twitter.com/osuissa" target="_blanck">@osuissa</a> </span>
                                 <p>É evangelista de novas tecnologias como NoSQL e Node.js as quais estão em voga atualmente; também palestra sobre Javascript, Frontend, PHP, Node.js e MongoDB. Organizador dos eventos FrontinSampa e Sampa.js. Atualmente esta iniciando sua empresa voltada em produtos, cursos, treinamentos e consultorias ao desenvolvimento de sistemas flexíveis e escaláveis com Node.js e NoSQL.</p>
                             </div>
                             <div class="picture-palestrante col-lg-2 col-md-2">
