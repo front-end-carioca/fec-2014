@@ -1,3 +1,4 @@
+@charset "UTF-8";
 /*! normalize.css v3.0.1 | MIT License | git.io/normalize */
 html {
   font-family: sans-serif;
@@ -5347,7 +5348,7 @@ body {
         width: auto;
         height: auto;
         position: absolute;
-        left: 178px;
+        left: 145px;
         top: 25px; }
 
 .mobile {
@@ -5384,7 +5385,7 @@ body {
       padding: 7px;
       border-radius: 5px;
       font-size: 14px;
-      margin: 0 6px; }
+      margin: 0 1px; }
       .wrapper-nav ul li:hover, .wrapper-nav ul li:focus, .wrapper-nav ul li:active {
         background: #f29b19; }
         .wrapper-nav ul li:hover > a, .wrapper-nav ul li:focus > a, .wrapper-nav ul li:active > a {
@@ -5604,7 +5605,8 @@ body {
 
 .wrapper-pgm {
   margin-bottom: 30px;
-  overflow: hidden; }
+  overflow: hidden;
+  margin-top: 90px; }
   .wrapper-pgm h3 {
     color: #194a6b;
     font-size: 50px;
@@ -5683,8 +5685,9 @@ body {
       overflow: hidden; }
       .wrapper-pgm .wrapper-horarios .programacao .picture-palestrante img {
         width: 100%;
-        height: 107%;
-        border-radius: 5px; }
+        height: 67%;
+        border-radius: 5px;
+        margin-top: 45px; }
     .wrapper-pgm .wrapper-horarios .programacao:hover {
       transition: all 1s;
       -webkit-transition: all 1s;
@@ -5707,7 +5710,8 @@ body {
 
 .wrapper-patrocinio {
   margin-bottom: 30px;
-  overflow: hidden; }
+  overflow: hidden;
+  margin-top: 50px; }
   .wrapper-patrocinio h3 {
     color: #194a6b;
     font-size: 50px;
@@ -5888,16 +5892,57 @@ footer {
       background: url(../images/bg-nav-02.png) no-repeat;
       width: 1034px; }
       .wrapper-header header .desktop .wrapper-nav {
-        width: 424px;
-        margin-top: 20px;
+        width: 520px;
+        margin-top: 40px;
         float: inherit;
         position: absolute;
         right: 200px; }
         .wrapper-header header .desktop .wrapper-nav ul li:nth-child(6) {
-          margin-left: 80px; }
+          margin-left: 0px; }
 
   .wrapper-info-icons .content-box {
-    width: 60%; } }
+    width: 64%; } }
+@media (min-width: 1061px) and (max-width: 1280px) {
+  #menufixo {
+    width: 100%;
+    height: 60px;
+    background-color: #1b4866;
+    position: fixed;
+    z-index: 9999;
+    display: none; }
+
+  #centermenu {
+    width: 1200px;
+    margin: auto; }
+
+  #centermenu img {
+    margin-top: 3px; }
+
+  .main-menu ul {
+    margin: -65px 0 0 165px; }
+
+  .main-menu ul li {
+    list-style: none;
+    display: inline-block;
+    padding: 7px;
+    border-radius: 5px;
+    font-size: 16px;
+    margin: 21px 10px 0 11px; }
+
+  .main-menu a {
+    color: #fff;
+    text-decoration: none;
+    padding: 5px; }
+
+  .main-menu a:hover {
+    background: #f29b19;
+    cursor: pointer;
+    padding: 5px;
+    border-radius: 5px; } }
+@media (min-width: 200px) and (max-width: 1060px) {
+  #menufixo {
+    display: none !important;
+    visibility: hidden !important; } }
 @media screen and (max-width: 1060px) {
   /*HEADER*/
   .wrapper-header {
@@ -5958,7 +6003,9 @@ footer {
     height: 150px; }
     .wrapper-pgm .wrapper-horarios .programacao .picture-palestrante img {
       height: 100%;
-      border-radius: 50%; }
+      border-radius: 35%;
+      margin-top: 0px;
+      height: 90%; }
   .wrapper-pgm .wrapper-horarios .programacao:hover .box-horario span:nth-child(1):before {
     top: 5px;
     left: 5px; }
