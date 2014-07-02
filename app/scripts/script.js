@@ -73,23 +73,6 @@ function AnimationNav(){
 	
 }
 
-function MediaQueryJS(){
-	var myWidth = window.innerWidth;
-
-	if (myWidth <= 1056 && myWidth >= 993){
-		alert('responsive 1');
-	}else if(myWidth <= 991 && myWidth >= 774){
-		alert('responsive 2');
-	}else if(myWidth <= 772 && myWidth >= 650){
-		alert('responsive 3');
-	}else if(myWidth <= 648 && myWidth >= 398){
-		alert('responsive 4');
-	}
-
-	alert(myWidth);
-}
-
-
 
 
 
