@@ -2,7 +2,6 @@ $(document).ready(function(){
 	MagicMenu();
 	AnimationNav();
 	AnimationNavMob();
-	MediaQueryJS();
 });
 
 function MagicMenu(){
