@@ -1,5 +1,5 @@
 //function menu responsive
-(function() {
+$(document).ready(function() {
 	var triggerBttn = document.getElementById( 'trigger-overlay' ),
 		overlay = document.querySelector( 'div.overlay' ),
 		closeBttn = overlay.querySelector( 'button.overlay-close' );
@@ -38,4 +38,27 @@
 
 	triggerBttn.addEventListener( 'click', toggleOverlay );
 	closeBttn.addEventListener( 'click', toggleOverlay );
-})();
+
+});
+
+$(document).ready(function(){
+	btnopen = document.getElementById('trigger-overlay');
+	btnclose = document.querySelector( '.overlay-close' );
+
+	function closenav(){
+		$('.mobile').css('opacity', '0');
+	}
+	function open(){
+		$('.mobile').css('opacity', '1');
+	}
+
+	btnopen.addEventListener('click', closenav);
+	btnclose.addEventListener('click', open);
+});
+
+$('.navegacao2').click(function(){
+	$('.overlay-slidedown').removeClass('open');
+	$('.mobile').css('opacity', '1');
+});
+
+
