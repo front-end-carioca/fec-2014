@@ -303,7 +303,7 @@ body {margin: 0; padding: 0; font-family: "Helvetica Neue", Helvetica, Arial, sa
       border: 1px solid #ccc; text-align: center; padding: 10px; margin: 10px 0px; color: #1b4866; font-size: 18px; font-weight: bold;
       &:hover{ background: #d3d3d3; transition: all 1s; -webkit-transition: all 1s; -moz-transition: all 1s; -o-transition: all 1s;
         p{text-decoration: underline;}
-        p:before{ content: url(../images/clock.svg); display: block; position: absolute; top: 5px;}
+        p:before{ content: url(../images/clock.png); display: block; position: absolute; top: 5px;}
       }
       p{ margin: 0;}
     }
@@ -325,7 +325,7 @@ body {margin: 0; padding: 0; font-family: "Helvetica Neue", Helvetica, Arial, sa
       }
       &:hover{transition: all 1s; -webkit-transition: all 1s; -moz-transition: all 1s; -o-transition: all 1s; background: #f5f5f5;
         .box-horario{ background: #d3d3d3; 
-          span:nth-child(1):before{ content: url(../images/clock.svg); display: block; position: absolute; top: 13px; left: -50px;}
+          span:nth-child(1):before{ content: url(../images/clock.png); display: block; position: absolute; top: 13px; left: -50px;}
         }
       }
     }
@@ -609,6 +609,9 @@ padding: 5px;
       h4{font-size: 5vw;}
   }
    /*END HEADER*/
+  .button-inscrevase { width: 100%;}
+  .btn-custom { padding: 10px 0; font-size: 4.5vw;}
+
   .wrapper-info-icons{
       .content-box{ width: 70%;}
   }
@@ -640,7 +643,14 @@ padding: 5px;
       img{ width: 100%;}
     }
   }
-
+  
+  .wrapper-apoio1 ul li{ margin: 0 1% 10px 0;}
+  .wrapper-apoio2 ul li{ margin: 0 1% 10px 0;}
+  .wrapper-about h3{ font-size: 10vw;}
+  .wrapper-pgm h3{ font-size: 10vw;}
+  .wrapper-patrocinio h3{ font-size: 10vw;}
+  .wrapper-local h3{ font-size: 10vw;}
+  .wrapper-hospedar h3{ font-size: 10vw;}
 }
 
 @media screen and (max-width: 320px) {

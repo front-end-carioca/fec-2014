@@ -5629,7 +5629,7 @@ body {
       .wrapper-pgm .wrapper-horarios .horarios:hover p {
         text-decoration: underline; }
       .wrapper-pgm .wrapper-horarios .horarios:hover p:before {
-        content: url(../images/clock.svg);
+        content: url(../images/clock.png);
         display: block;
         position: absolute;
         top: 5px; }
@@ -5696,7 +5696,7 @@ body {
       .wrapper-pgm .wrapper-horarios .programacao:hover .box-horario {
         background: #d3d3d3; }
         .wrapper-pgm .wrapper-horarios .programacao:hover .box-horario span:nth-child(1):before {
-          content: url(../images/clock.svg);
+          content: url(../images/clock.png);
           display: block;
           position: absolute;
           top: 13px;
@@ -6089,6 +6089,13 @@ footer {
       font-size: 5vw; }
 
   /*END HEADER*/
+  .button-inscrevase {
+    width: 100%; }
+
+  .btn-custom {
+    padding: 10px 0;
+    font-size: 4.5vw; }
+
   .wrapper-info-icons .content-box {
     width: 70%; }
 
@@ -6103,4 +6110,25 @@ footer {
     display: none; }
 
   .wrapper-local .image-local img {
-    width: 100%; } }
+    width: 100%; }
+
+  .wrapper-apoio1 ul li {
+    margin: 0 1% 10px 0; }
+
+  .wrapper-apoio2 ul li {
+    margin: 0 1% 10px 0; }
+
+  .wrapper-about h3 {
+    font-size: 10vw; }
+
+  .wrapper-pgm h3 {
+    font-size: 10vw; }
+
+  .wrapper-patrocinio h3 {
+    font-size: 10vw; }
+
+  .wrapper-local h3 {
+    font-size: 10vw; }
+
+  .wrapper-hospedar h3 {
+    font-size: 10vw; } }
