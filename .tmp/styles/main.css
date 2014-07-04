@@ -5629,7 +5629,7 @@ body {
       .wrapper-pgm .wrapper-horarios .horarios:hover p {
         text-decoration: underline; }
       .wrapper-pgm .wrapper-horarios .horarios:hover p:before {
-        content: url(../images/clock.svg);
+        content: url(../images/clock.png);
         display: block;
         position: absolute;
         top: 5px; }
@@ -5696,7 +5696,7 @@ body {
       .wrapper-pgm .wrapper-horarios .programacao:hover .box-horario {
         background: #d3d3d3; }
         .wrapper-pgm .wrapper-horarios .programacao:hover .box-horario span:nth-child(1):before {
-          content: url(../images/clock.svg);
+          content: url(../images/clock.png);
           display: block;
           position: absolute;
           top: 13px;
