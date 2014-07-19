@@ -14,6 +14,23 @@ $icon-font-path: "/bower_components/bootstrap-sass-official/vendor/assets/fonts/
   background: rgba(33, 57, 71, 0.955);
 }
 
+
+.HoldLogotipo {
+  background-image: url(../images/logo.png);
+  width: 158px;
+  height: 55px;
+  text-indent: -9999px;
+  display: block;
+}
+
+#LogoMenuFixo{
+  background-image: url(../images/logo-branca.png);
+  width: 150px;
+  height: 52px;
+  text-indent: -9999px;
+  display: block;
+}
+
 /* Overlay closing cross */
 .overlay .overlay-close {
   width: 80px;
@@ -435,12 +452,13 @@ footer{ width: 100%; height: auto; min-height: 40px; padding: 10px; background: 
   z-index: 9999;
   display: none;
 }
+
 #centermenu {
   width: 1200px;
   margin: auto;
 }
-#centermenu img {
-  margin-top: 3px;
+#centermenu a {
+  margin: 3px 0 0 20px;
 }
 .main-menu ul {
 margin: -65px 0 0 165px;
@@ -655,3 +673,15 @@ padding: 5px;
 
 @media screen and (max-width: 320px) {
 }
+
+
+
+
+
+
+
+
+
+
+
+

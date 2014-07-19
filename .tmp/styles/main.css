@@ -5144,6 +5144,20 @@ button.close {
   left: 0;
   background: rgba(33, 57, 71, 0.955); }
 
+.HoldLogotipo {
+  background-image: url(../images/logo.png);
+  width: 158px;
+  height: 55px;
+  text-indent: -9999px;
+  display: block; }
+
+#LogoMenuFixo {
+  background-image: url(../images/logo-branca.png);
+  width: 150px;
+  height: 52px;
+  text-indent: -9999px;
+  display: block; }
+
 /* Overlay closing cross */
 .overlay .overlay-close {
   width: 80px;
@@ -5897,8 +5911,8 @@ footer {
   width: 1200px;
   margin: auto; }
 
-#centermenu img {
-  margin-top: 3px; }
+#centermenu a {
+  margin: 3px 0 0 20px; }
 
 .main-menu ul {
   margin: -65px 0 0 165px; }
