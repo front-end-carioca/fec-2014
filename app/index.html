@@ -2,17 +2,26 @@
 <html class="no-js">
     <head>
         <meta charset="utf-8">
-        <title>Front-End Carioca</title>
+        <meta property="og:locale" content="pt_BR">
+        <meta property="og:url" content="http://frontendcarioca.com.br">
+        <meta property="og:title" content="Front End Carioca - 2014">
+        <meta property="og:site_name" content="Front End Carioca">
+        <meta property="og:description" content="Um dos melhores eventos do Rio de Janeiro de desenvolvimento Front End.">
+        <meta property="og:image" content="http://frontendcarioca.com.br/images/fb.jpg">
+        <meta property="og:image:type" content="image/jpeg">
+        <meta property="og:image:width" content="700">
+        <meta property="og:image:height" content="400">
+        <meta property="og:type" content="website">
         <meta name="description" content="Front-End Carioca - Rio de janeiro">
         <meta name="viewport" content="width=device-width">
-        <link rel="shortcut icon" href="/favicon.ico">
+
+        <link rel="shortcut icon" href="images/favicon.ico">
         <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
         <!-- build:css styles/vendor.css -->
         <!-- bower:css -->
         <!-- endbower -->
         <!-- endbuild -->
         <!--[if IE 7]><link rel="stylesheet" href="styles/frontendcarioca-ie7.css"><![endif]-->
-
         <!-- build:css(.tmp) styles/main.css -->
         <link rel="stylesheet" href="styles/main.css">
         <!-- endbuild -->
@@ -42,7 +51,7 @@
         <!-- / RESPONSIVE MENU -->
         <nav class="mobile">
             <h1>
-                <img src="images/logo.png" alt="Logo Front-End Carioca">
+                <a href="#" class="HoldLogotipo">Front End Carioca</a>
             </h1>
             <a id="trigger-overlay" type="button"></a>
         </nav>
@@ -50,7 +59,7 @@
         <!-- main menu fixed -->
         <div id="menufixo">
             <div id="centermenu">
-                <img src="images/logo-branca.png" alt="Logo Front-End Carioca">
+                <a href="#" id="LogoMenuFixo">Front End Carioca</a>
                 <div class="main-menu">
                     <ul>
                         <li><a href="#Home" class="navegacao" id="001">Home</a></li>
@@ -70,9 +79,7 @@
             <header>
                 <nav class="desktop">
                     <h1>
-                        <a href="index.html">
-                            <img src="images/logo.png" alt="Logo Front-End Carioca">
-                        </a>
+                        <a href="#" class="HoldLogotipo">Front End Carioca</a>
                     </h1>
                     <div class="wrapper-nav">
                         <ul>
@@ -85,6 +92,11 @@
                         </ul>
                     </div>
                 </nav>
+                <section id="HoldPatrocinador">
+                    <section id="SejaUm">
+                        <a href="mailto:contato@frontendcarioca.com.br">Seja um patrocinador</a>
+                    </section>
+                </section>
                 <div class="box_event">
                     <h2>PARTICIPE DO <strong>FRONT-END CARIOCA</strong>,</h2>
                     <h3>o melhor evento de front end está na área.</h3>
@@ -380,6 +392,11 @@
                                 <img src="images/patrocinio-apoio/caelum.jpg" border="0" alt="curso caelum" class="img-responsive">
                             </a>
                         </li>
+                        <li>
+                            <a href="http://www.ilearn.com.br/" target="_blanck">
+                                <img src="images/patrocinio-apoio/ilearn.jpg" border="0" alt="curso ilearn" class="img-responsive">
+                            </a>
+                        </li>
                     </ul>
                 </div>
                 <div class="wrapper-apoio1 no_padding col-lg-12">
@@ -398,11 +415,6 @@
                         <li>
                             <a href="http://www.treinaweb.com.br/" target="_blanck">
                                 <img src="images/patrocinio-apoio/treina-web.jpg" border="0" alt="treina web">
-                            </a>
-                        </li>
-                        <li>
-                            <a href="http://www.ilearn.com.br/" target="_blanck">
-                                <img src="images/patrocinio-apoio/ilearn.jpg" border="0" alt="curso ilearn">
                             </a>
                         </li>
                         <li>
@@ -505,7 +517,11 @@
         <div class="clear"></div>
         
         <br><br><br>
-
+        <section id="HoldRedeSocial">
+            <a href="https://www.facebook.com/frontendcarioca" target="_blanck" class="redes" id="facebook">Facebook</a>
+            <a href="https://twitter.com/frontendcarioca" target="_blanck" class="redes" id="twitter">Twitter</a>
+        </section><!-- HoldRedeSocial END -->
+        <div class="clear"></div>
         <footer>
             <div class="wrapper-footer">
                 © copyright - 2014 Todos os direitos reservados. contato@frontendcarioca.com.br
