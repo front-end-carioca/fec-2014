@@ -1,6 +1,6 @@
 # Front End Carioca
 
-[![FrondEnd Carioca](http://frontendcarioca.com.br/img/logotipo.png)](http://frontendcarioca.com.br)
+[![FrondEnd Carioca](http://frontendcarioca.com.br/images/54ada6f5.fb.jpg)](http://frontendcarioca.com.br)
 
 > Este repositório foi criado para trabalharmos em cima do site de nossa primeira edição, que será realizada na Universidade Veiga de Almeida - Campus Tijuca no Rio de Janeiro.
 
