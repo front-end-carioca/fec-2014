@@ -1,3 +1,4 @@
+@charset "UTF-8";
 /*! normalize.css v3.0.1 | MIT License | git.io/normalize */
 html {
   font-family: sans-serif;
@@ -5738,7 +5739,7 @@ body {
       overflow: hidden; }
       .wrapper-pgm .wrapper-horarios .programacao .picture-palestrante img {
         width: 100%;
-        height: 70%;
+        height: 100%;
         border-radius: 5px;
         margin-top: 5px; }
     .wrapper-pgm .wrapper-horarios .programacao:hover {
@@ -5784,9 +5785,9 @@ body {
       .wrapper-patrocinio ul li a {
         overflow: hidden;
         display: block;
-        padding: 50px 0; }
+        padding: 0; }
         .wrapper-patrocinio ul li a img {
-          max-height: 75px; }
+          /*max-height: 75px;*/ }
 
 .wrapper-apoio1 {
   margin-bottom: 30px;
