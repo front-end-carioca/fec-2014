@@ -1,4 +1,3 @@
-@charset "UTF-8";
 /*! normalize.css v3.0.1 | MIT License | git.io/normalize */
 html {
   font-family: sans-serif;
@@ -5786,6 +5785,8 @@ body {
         overflow: hidden;
         display: block;
         padding: 50px 0; }
+        .wrapper-patrocinio ul li a img {
+          max-height: 75px; }
 
 .wrapper-apoio1 {
   margin-bottom: 30px;
@@ -6151,8 +6152,20 @@ footer {
     padding: 10px 0;
     font-size: 4.5vw; }
 
+  .wrapper-info-icons .icon-location_info {
+    float: none;
+    margin: auto; }
+  .wrapper-info-icons .icon-calendar_info {
+    float: none;
+    margin: auto; }
+  .wrapper-info-icons .icon-mic_info {
+    float: none;
+    margin: auto; }
+  .wrapper-info-icons .icon-users_info {
+    float: none;
+    margin: auto; }
   .wrapper-info-icons .content-box {
-    width: 70%; }
+    width: 100%; }
 
   .wrapper-oquevairolar ul li {
     width: 100%;
