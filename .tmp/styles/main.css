@@ -1,4 +1,3 @@
-@charset "UTF-8";
 /*! normalize.css v3.0.1 | MIT License | git.io/normalize */
 html {
   font-family: sans-serif;
@@ -5517,6 +5516,12 @@ body {
   width: 310px;
   margin: 0 auto; }
 
+.button-inscrevase.btn1 {
+  float: right; }
+
+.button-inscrevase.btn2 {
+  float: left; }
+
 .btn-custom {
   background-color: #194a6b;
   width: 100%;
@@ -6104,6 +6109,12 @@ footer {
 
   .bottomToAll {
     float: left !important; }
+
+  .button-inscrevase.btn1 {
+    float: initial; }
+
+  .button-inscrevase.btn2 {
+    float: initial; }
 
   .box_event {
     width: 90%;
