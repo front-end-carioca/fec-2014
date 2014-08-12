@@ -279,6 +279,8 @@ body {margin: 0; padding: 0; font-family: "Helvetica Neue", Helvetica, Arial, sa
 .container-section1{ padding: 20px 15px;}
 .wrapper-button{ width: 100%; height: auto; padding: 10px; position: relative;}
 .button-inscrevase { width: 310px; margin: 0 auto;}
+.button-inscrevase.btn1 { float: right;}
+.button-inscrevase.btn2 { float: left;}
 .btn-custom {
   background-color: #194a6b;
   width: 100%;
@@ -630,14 +632,16 @@ padding: 5px;
   
 }
 @media screen and (max-width: 768px) {
-   /*HEADER*/
-   #MainBottom {
+  /*HEADER*/
+  #MainBottom {
     width: 360px;
     margin: auto;
   }
-   .bottomToAll {
-  float: left !important;
-}
+  .bottomToAll {
+    float: left !important;
+  }
+  .button-inscrevase.btn1 { float: initial;}
+  .button-inscrevase.btn2 { float: initial;}
   .box_event{ width: 90%; top: 100px;
       h2{ font-size: 4vw;}
       h3{ font-size: 3vw;}
