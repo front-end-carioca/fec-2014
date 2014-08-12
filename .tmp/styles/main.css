@@ -5144,6 +5144,11 @@ button.close {
   left: 0;
   background: rgba(33, 57, 71, 0.955); }
 
+.forkme {
+  position: fixed;
+  right: 0;
+  z-index: 9999; }
+
 .HoldLogotipo {
   background-image: url(../images/logo.png);
   width: 158px;
@@ -5632,7 +5637,7 @@ body {
 /* ----- END SECTION INFORMAÇÕES ICONES ----- */
 /* ----- SECTION ABOUT / O EVENTO ----- */
 .container-section2 {
-  padding: 15px 15px 0px 15px; }
+  padding: 15px; }
 
 .wrapper-about {
   margin-bottom: 30px;
@@ -5675,7 +5680,7 @@ body {
   .wrapper-pgm .wrapper-horarios .horarios {
     border: 1px solid #ccc;
     text-align: center;
-    padding: 10px;
+    padding: 7px 10px;
     margin: 10px 0px;
     color: #1b4866;
     font-size: 18px;
@@ -5718,7 +5723,7 @@ body {
         left: 36%; }
     .wrapper-pgm .wrapper-horarios .programacao .descricao {
       padding: 10px;
-      width: 600px; }
+      width: 64%; }
       .wrapper-pgm .wrapper-horarios .programacao .descricao h3 {
         font-size: 18px;
         color: #5a5a5a;
@@ -5740,8 +5745,6 @@ body {
       padding: 5px;
       position: absolute;
       right: 0;
-      bottom: 0;
-      top: 0;
       overflow: hidden; }
       .wrapper-pgm .wrapper-horarios .programacao .picture-palestrante img {
         width: 100%;
@@ -5952,7 +5955,7 @@ footer {
   height: 60px;
   background-color: #1b4866;
   position: fixed;
-  z-index: 9999;
+  z-index: 999;
   display: none; }
 
 #centermenu {
@@ -5971,7 +5974,7 @@ footer {
   padding: 7px;
   border-radius: 5px;
   font-size: 16px;
-  margin: 21px 10px 0 11px; }
+  margin: 21px 9px 0 9px; }
 
 .main-menu a {
   color: #fff;
