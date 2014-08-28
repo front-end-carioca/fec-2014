@@ -1,0 +1,863 @@
+$icon-font-path: "/bower_components/bootstrap-sass-official/vendor/assets/fonts/bootstrap/";
+
+// bower:scss
+@import "../../bower_components/bootstrap-sass-official/vendor/assets/stylesheets/bootstrap.scss";
+// endbower
+
+/* Overlay style */
+.overlay {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background: rgba(33, 57, 71, 0.955);
+}
+
+.forkme {
+  position: fixed;
+  right: 0;
+  z-index: 9999;
+}
+
+.HoldLogotipo {
+  background-image: url(../images/logo.png);
+  width: 158px;
+  height: 55px;
+  text-indent: -9999px;
+  display: block;
+}
+
+#LogoMenuFixo{
+  background-image: url(../images/logo-branca.png);
+  width: 150px;
+  height: 52px;
+  text-indent: -9999px;
+  display: block;
+}
+
+#HoldPatrocinador {
+  margin: auto;
+  width: 250px;
+}
+#SejaUm {
+  padding: 15px;
+  font-size: 21px;
+  text-align: center;
+  border: 3px solid #fff;
+  position: absolute;
+  margin: 75px 0 0 0;
+  background-color: #000;
+  opacity: 0.60;
+  border-radius: 10px;
+  display: none;
+}
+  
+#SejaUm a {
+  color: #fff;
+  font-family: "frontendcarioca";
+}
+#facebook {
+  background-image: url(../images/facebook.jpg);
+  width: 50px;
+  height: 53px;
+  text-indent: -9999px;
+  display: block;
+}
+#twitter {
+  background-image: url(../images/twitter.jpg);
+  width: 50px;
+  height: 53px;
+  text-indent: -9999px;
+  display: block;
+}
+.redes {
+  float: left;
+}
+#HoldRedeSocial {
+  float: right;
+  margin-right: 30px;
+}
+
+/* Overlay closing cross */
+.overlay .overlay-close {
+  width: 80px;
+  height: 80px;
+  position: absolute;
+  right: 20px;
+  top: 20px;
+  overflow: hidden;
+  border: none;
+  background: url(../images/cross.png) no-repeat center center;
+  text-indent: 200%;
+  color: transparent;
+  outline: none;
+  z-index: 100;
+}
+
+/* Menu style */
+.overlay nav {
+  text-align: center;
+  position: relative;
+  top: 50%;
+  height: 60%;
+  -webkit-transform: translateY(-50%);
+  transform: translateY(-50%);
+}
+
+.overlay ul {
+  list-style: none;
+  padding: 0;
+  margin: 0 auto;
+  display: inline-block;
+  height: 60%;
+  position: relative;
+}
+
+.overlay ul li {
+  display: block;
+  height: 20%;
+  height: calc(100% / 5);
+  min-height: 54px;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+}
+
+.overlay ul li a {
+  font-size: 40px;
+  letter-spacing: 2px;
+  font-weight: 300;
+  display: block;
+  color: #fff;
+  -webkit-transition: color 0.2s;
+  transition: color 0.2s;
+}
+
+.overlay ul li a:hover,
+.overlay ul li a:focus {
+  color: #f29b19;
+}
+
+/* Effects */
+.overlay-slidedown {
+  visibility: hidden;
+  -webkit-transform: translateY(-100%);
+  transform: translateY(-100%);
+  -webkit-transition: -webkit-transform 0.4s ease-in-out, visibility 0s 0.4s;
+  transition: transform 0.4s ease-in-out, visibility 0s 0.4s;
+}
+
+.overlay-slidedown.open {
+  visibility: visible;
+  -webkit-transform: translateY(0%);
+  transform: translateY(0%);
+  -webkit-transition: -webkit-transform 0.4s ease-in-out;
+  transition: transform 0.4s ease-in-out;
+  z-index: 10;
+}
+
+@media screen and (max-height: 30.5em) {
+  .overlay nav {
+    height: 70%;
+    font-size: 34px;
+  }
+  .overlay ul li {
+    min-height: 34px;
+  }
+}
+
+@font-face {
+  font-family: 'frontendcarioca';
+  src: url('../font/frontendcarioca.eot?48380195');
+  src: url('../font/frontendcarioca.eot?48380195#iefix') format('embedded-opentype'),
+       url('../font/frontendcarioca.woff?48380195') format('woff'),
+       url('../font/frontendcarioca.ttf?48380195') format('truetype'),
+       url('../font/frontendcarioca.svg?48380195#frontendcarioca') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+/* Chrome hack: SVG is rendered more smooth in Windozze. 100% magic, uncomment if you need it. */
+/* Note, that will break hinting! In other OS-es font will be not as sharp as it could be */
+/*
+@media screen and (-webkit-min-device-pixel-ratio:0) {
+  @font-face {
+    font-family: 'frontendcarioca';
+    src: url('../font/frontendcarioca.svg?48380195#frontendcarioca') format('svg');
+  }
+}
+*/
+ 
+ [class^="icon-"]:before, [class*=" icon-"]:before {
+  font-family: "frontendcarioca";
+  font-style: normal;
+  font-weight: normal;
+  speak: none;
+ 
+  display: inline-block;
+  text-decoration: inherit;
+  width: 1em;
+  margin-right: .2em;
+  text-align: center;
+  /* opacity: .8; */
+ 
+  /* For safety - reset parent styles, that can break glyph codes*/
+  font-variant: normal;
+  text-transform: none;
+     
+  /* fix buttons height, for twitter bootstrap */
+  line-height: 1em;
+ 
+  /* Animation center compensation - margins should be symmetric */
+  /* remove if not needed */
+  margin-left: .2em;
+ 
+  /* you can be more comfortable with increased icons size */
+  /* font-size: 120%; */
+ 
+  /* Uncomment for 3D effect */
+  /* text-shadow: 1px 1px 1px rgba(127, 127, 127, 0.3); */
+}
+ 
+.icon-users:before { content: '\e800'; } /* '' */
+.icon-calendar:before { content: '\e801'; } /* '' */
+.icon-mic:before { content: '\e802'; } /* '' */
+.icon-location:before { content: '\e803'; } /* '' */
+.icon-users-1:before { content: '\e804'; } /* '' */
+.icon-location-1:before { content: '\e805'; } /* '' */
+.icon-github-circled:before { content: '\e806'; } /* '' */
+.icon-calendar-1:before { content: '\e807'; } /* '' */
+.icon-mic-1:before { content: '\e808'; } /* '' */
+.icon-twitter-circled:before { content: '\e809'; } /* '' */
+.icon-facebook-circled:before { content: '\e80a'; } /* '' */
+
+
+/* -------- VARIAVEIS -------- */
+$colorf: #1a4a68;
+$bg-linkmenu: #f29b19;
+$color-box: #c9a728;
+$azul: #1e3645;
+
+.browsehappy { margin: 0.2em 0; background: #ccc; color: #000; padding: 0.2em 0;}
+.clear {clear: both;}
+.no_padding { padding: 0;}
+
+/* STYLE INIT */
+body {margin: 0; padding: 0; font-family: "Helvetica Neue", Helvetica, Arial, sans-serif; overflow-x: hidden;}
+
+/* -------- HEADER -------- */
+.wrapper-header{ width: 100%; height: 543px; background: url(../images/bg-header.jpg) no-repeat center center fixed; background-size: cover; -webkit-background-size: cover; -moz-background-size: cover; -o-background-size: cover; z-index: 1;
+    header{ width: 100%; height: 100%; background: url(../images/bg-cristo.png) no-repeat center center;
+        .desktop{ width: 1237px; height: 108px; background: url(../images/bg-nav.png) no-repeat; margin: 0 auto; position: relative; top: 47px;
+            h1{margin: 0; width: auto; height: auto; position: absolute; left: 175px; top: 25px;}
+        }
+    }
+}
+.mobile{ width: 100%; background: rgba(255, 255, 255, 0.7); position: fixed; display: none; z-index: 9;
+    h1{ margin: 0; width: 158px; float: left;}
+}
+#trigger-overlay{ position: absolute; right: 10px; top: 10px;
+    &:before{ width: 10px; height: 10px; content: url(../images/menu.png);}
+}
+.wrapper-nav{ width: 70%; float: right; margin-top: 45px;
+    ul{ margin: 0 auto; padding: 0; width: 100%;
+        li{list-style: none; display: inline-block; padding: 7px; border-radius: 5px; font-size: 14px; margin: 0 0 0 4px;
+            &:hover, &:focus, &:active{ background: $bg-linkmenu;
+            > a{ color: #fff; text-decoration: none;}
+            }
+            a{ color: $colorf;}
+        }
+    }
+}
+.box_event{ width: 60%; min-width: 845px; height: auto; margin: 0 auto; background: rgba(33, 57, 71, 0.955); top: 180px; position: relative; border-radius: 5px; padding: 20px; text-align: center; z-index: 8;
+    h2{margin: 0; font-size: 3em; color: #fff;}
+    h3{ margin: 0; font-size: 2em; color: #fff;}
+    strong{ color: $color-box;}
+}
+.box_local{width: 30%; min-width: 423px; height: auto; margin: 0 auto; background: rgba(0, 0, 0, 0.6); top: 220px; position: relative; border-radius: 5px; border: 3px solid #fff; padding: 15px; text-align: center; z-index: 8;
+    h4{margin: 0; color: #fff; font-size: 1.3em;}
+}
+.ball_cristo { position: absolute; right: 50px; top: 125px; z-index: 1;}
+
+.overlay-bg{ background: #fff;position: relative; width: 100%; height: 100%;}
+/* ------ END HEADER ------ */
+/* ------ SECTION BUTTON INSCREVA-SE --- */
+.container-section1{ padding: 20px 15px;}
+.wrapper-button{ width: 100%; height: auto; padding: 10px; position: relative;}
+.button-inscrevase { width: 310px; margin: 0 auto;}
+.button-inscrevase.btn1 { float: right;}
+.button-inscrevase.btn2 { float: left;}
+.btn-custom {
+  background-color: #194a6b;
+  width: 100%;
+  padding: 13px 23px;
+  border: 0;
+  border-radius: 7px;
+  box-shadow: 1px 1px 0px 2px #0c3147;
+  text-transform: capitalize;
+  font-size: 17px;
+  color: #f2c51a;
+  position: relative;
+  -webkit-box-shadow: 1px 1px 0px 2px #0c3147;
+  -moz-box-shadow: 1px 1px 0px 2px #0c3147;
+  -o-box-shadow: 1px 1px 0px 2px #0c3147;
+  box-shadow: 1px 1px 0px 2px #0c3147;
+  &:hover{
+    -webkit-transition: all 0.6s;
+    -moz-transition: all 0.6s;
+    -o-transition: all 0.6s;
+    transition: all 0.6s;
+    background: #194a6b;
+    color: #f2c51a;
+    top: 2px;
+    opacity: 0.9;
+  }
+}
+/* ----- END SECTION BUTTON INSCREVA-SE ------ */
+/* ----- SECTION INFORMAÇÕES ICONES ----- */
+
+.wrapper-info-icons{ position: relative; top: 40px;
+  .icon-location_info{ position: relative; display: block; width: 80px; height: 80px; float: left; border: 3px solid #b9b8bf; border-radius: 50%; 
+    i{position: absolute; top: 15%; left: 16%; font-size: 37px; color: #3e647e;}
+  }
+  .icon-calendar_info{ position: relative; display: block; width: 80px; height: 80px; float: left; border: 3px solid #b9b8bf; border-radius: 50%; 
+    i{position: absolute; top: 15%; left: 16%; font-size: 37px; color: #3e647e;}
+  }
+  .icon-mic_info{ position: relative; display: block; width: 80px; height: 80px; float: left; border: 3px solid #b9b8bf; border-radius: 50%; 
+    i{position: absolute; top: 15%; left: 17%; font-size: 37px; color: #3e647e;}
+  }
+  .icon-users_info{ position: relative; display: block; width: 80px; height: 80px; float: left; border: 3px solid #b9b8bf; border-radius: 50%; 
+    i{position: absolute; top: 16%; left: 14%; font-size: 37px; color: #3e647e;}
+  }
+  .content-box { overflow: hidden; float: left; width: 65%; padding: 14px 5px; line-height: 22px;
+    strong{ font-size: 18px;}
+    p{color: #ccc; font-size: 14px;}
+  }
+  /*Hover icons*/
+  div.col-lg-3{
+    &:hover{ transition: all 1s; -webkit-transition: all 1s; -moz-transition: all 1s; -o-transition: all 1s;
+      span{ border: 5px dotted #3e647e;
+        i{ color: #f2c51a; top: 13%; left: 14%;}
+      }
+    }
+  }
+}
+/* ----- END SECTION INFORMAÇÕES ICONES ----- */
+/* ----- SECTION ABOUT / O EVENTO ----- */
+.container-section2 {padding: 15px;}
+.wrapper-about{ margin-bottom: 30px; overflow: hidden;
+  h3{ color: #194a6b; font-size: 50px;}
+}
+.wrapper-oquevairolar{
+  h4{color: #194a6b; font-size: 23px;}
+  ul{padding: 0; list-style-position: inside; overflow: hidden; margin-top: 15px;
+    li{ width: 50%; float: left; font-size: 17px;}
+  }
+}
+.image-section2{
+  img{ width: 100%;}
+}
+/* ----- END SECTION ABOUT / O EVENTO ----- */
+/* ----- SECTION SECTION PROGRAMAÇÃO ----- */
+.container-section3 {padding: 50px 15px 0px 15px;}
+.wrapper-pgm{ margin-bottom: 30px; overflow: hidden; margin-top: 90px;
+  h3{ color: #194a6b; font-size: 50px; margin: 0;}
+  .wrapper-horarios{
+    div.horarios:nth-child(1){ margin-top: 20px;}
+    .horarios{
+      border: 1px solid #ccc; text-align: center; padding: 7px 10px; margin: 10px 0px; color: #1b4866; font-size: 18px; font-weight: bold;
+      &:hover{ background: #d3d3d3; transition: all 1s; -webkit-transition: all 1s; -moz-transition: all 1s; -o-transition: all 1s;
+        p{text-decoration: underline;}
+        p:before{ content: url(../images/clock.png); display: block; position: absolute; top: 5px;}
+      }
+      p{ margin: 0;}
+    }
+    .programacao{ border: 1px solid #ccc; position: relative; overflow: hidden; margin-bottom: 10px;
+      div{ float: left;}
+      .box-horario{ background-color: #f5f5f5; padding: 15px 15px; position: absolute; height: 100%;
+        span{ color: #666; font-weight: 700; width: 100%; display: block;}
+        center{ position: absolute; top: 32%; left: 36%;}
+      }
+      .descricao{ padding: 10px; width: 64%;
+        h3{ font-size: 18px; color: #5a5a5a; margin: 10px 0 5px;}
+        span{ font-size: 14px; font-weight: 700; color: #666; margin-bottom: 15px;
+          a{color: #f39b1a; text-decoration: none;}
+        }
+        p{ font-size: 14px; color: #666; font-weight: 400; margin: 10px 0 0;}
+      }
+      .picture-palestrante{ padding: 5px; position: absolute; right: 0; overflow: hidden;
+        img{ width: 100%; height: 100%; border-radius: 5px; margin-top: 5px;}
+      }
+      &:hover{transition: all 1s; -webkit-transition: all 1s; -moz-transition: all 1s; -o-transition: all 1s; background: #f5f5f5;
+        .box-horario{ background: #d3d3d3; 
+          span:nth-child(1):before{ content: url(../images/clock.png); display: block; position: absolute; top: 13px; left: -50px;}
+        }
+      }
+    }
+  }
+}
+/* ----- END SECTION PROGRAMAÇÃO ----- */
+/* ----- SECTION SECTION PATROCINIO ----- */
+.container-section4 {padding: 0px 15px;}
+.wrapper-patrocinio{ margin-bottom: 30px; overflow: hidden;
+  h3{ color: #194a6b; font-size: 50px; margin: 0;}
+  ul{list-style: none; overflow: hidden; padding: 0; margin-top: 20px;
+    li{ float: left; border: 1px solid #ccc; border-radius: 5px; margin-right: 10px; margin-bottom: 10px;
+      &:hover{
+        border: 1px solid #f39b1a;
+      }
+      a{overflow: hidden; display: block; padding: 0;
+        img{ /*max-height: 75px;*/}
+      }
+    }
+  }
+}
+.wrapper-apoio1{ margin-bottom: 30px; overflow: hidden;
+  h4{ color: #194a6b; font-size: 30px; margin: 0;}
+  ul{list-style: none; overflow: hidden; padding: 0; margin-top: 20px;
+    li{ float: left; border: 1px solid #ccc; border-radius: 5px; margin-right: 30px; margin-bottom: 10px;
+      &:hover{
+        border: 1px solid #f39b1a;
+      }
+      a{overflow: hidden; display: block; padding: 5px;}
+    }
+  }
+}
+.wrapper-apoio2{ margin-bottom: 0px; overflow: hidden;
+  h4{ color: #194a6b; font-size: 30px; margin: 0;}
+  ul{list-style: none; overflow: hidden; padding: 0; margin-top: 20px;
+    li{ float: left; border: 1px solid #ccc; border-radius: 5px; margin-right: 30px;
+      &:hover{
+        border: 1px solid #f39b1a;
+      }
+      a{overflow: hidden; display: block; padding: 5px;}
+    }
+  }
+}
+/* ----- END SECTION SECTION PATROCINIO ----- */
+/* ----- SECTION SECTION LOCAL ----- */
+.container-section5 {padding: 20px 15px;}
+.wrapper-local{
+  h3{ color: #194a6b; font-size: 50px; margin: 0;}
+  .info-local{
+    h2{ font-size: 30px; text-transform: uppercase;}
+    p{color: #a1a1a1; font-size: 17px;}
+      .p-data{ font-size: 14px; color: #666; font-weight: 700; margin: 0;
+        span{float: left; font-weight: 700; color: #666; margin-right: 7px; text-transform: uppercase;}
+      }
+      .p-hora{ font-size: 14px; color: #666; font-weight: 700;
+        span{float: left; font-weight: 700; color: #666; margin-right: 7px; text-transform: uppercase;} 
+      }
+    }
+   .image-local{
+    img{width: 100%;}
+   } 
+  }
+/* ----- END SECTION SECTION LOCAL ----- */
+/* ----- SECTION SECTION GMAPS ----- */
+.container-section6 {padding: 20px 15px;}
+.overlay-gmaps{
+  background: transparent;
+  position: relative;
+  width: 100%;
+  height: 450px;
+  top: 450px;
+  margin-top: -450px;
+  cursor: all-scroll;
+}
+.gmaps{
+  iframe{ width: 100%; height: 450px;}
+}
+/* ----- END SECTION SECTION GMAPS ----- */
+/* ----- SECTION SECTION HOSPEDAGEM ----- */
+.container-section7 {padding: 20px 15px; margin-top: 20px;}
+.wrapper-hospedar{
+  h3{ color: #194a6b; font-size: 50px; margin: 0;}
+  .boxht{ border: 1px solid #666; position: relative; overflow: hidden; margin-top: 35px;
+    .imagem-hospedagem{ padding: 15px 5px;}
+    .endereco-hospedagem{ padding: 10px;
+      ul{ list-style: none; padding: 0;
+        li{ line-height: 20px;
+          strong{ padding-right: 5px;}
+          a{ color: #f39b1a;
+            &:hover{ text-decoration: underline;}
+          }
+        }
+      }
+    }
+  }
+}
+/* ----- END SECTION SECTION HOSPEDAGEM ----- */
+
+footer{ width: 100%; height: auto; min-height: 40px; padding: 10px; background: rgba(0, 0, 0, 0.8); color: #fff !important;
+  .wrapper-footer{ overflow: hidden; width: 50%; margin: auto; text-align: center;}
+}
+
+/* ----- MENU FIXO ----- */
+#menufixo {
+  width: 100%;
+  height: 60px;
+  background-color: #1b4866;
+  position: fixed;
+  z-index: 999;
+  display: none;
+}
+
+#centermenu {
+  width: 1200px;
+  margin: auto;
+}
+#centermenu a {
+  margin: 3px 0 0 20px;
+}
+.main-menu ul {
+margin: -65px 0 0 165px;
+}
+.main-menu ul li {
+list-style: none;
+display: inline-block;
+padding: 7px;
+border-radius: 5px;
+font-size: 16px;
+margin: 21px 9px 0 9px;
+}
+.main-menu a {
+color: #fff;
+text-decoration: none;
+padding: 5px;
+}
+.main-menu a:hover {
+  background: #f29b19;
+  cursor: pointer;
+  padding: 5px;
+  border-radius: 5px;  
+}
+
+/* Responsive */
+@media screen and (max-width: 1280px) {
+    .bottomToAll {
+      float: left !important;
+    }
+    #MainBottom {
+      width: 725px;
+      margin: auto;
+    }
+    .wrapper-header{ 
+        header{ background: url(../images/bg-cristo-02.png) no-repeat center center;
+            .desktop{ background: url(../images/bg-nav-02.png) no-repeat; width: 1034px;
+                h1{ left: 145px;}
+                .wrapper-nav{width: 520px; margin-top: 40px; float: inherit; position: absolute; right: 200px;
+                    ul{
+                        li:nth-child(6){ margin-left: 0px;}
+                    }
+                }
+            }
+        }
+    }
+    .wrapper-info-icons{
+      .content-box{ width: 64%;}
+    }
+}
+@media (min-width: 1061px) and (max-width: 1200px) {
+  .bottomToAll {
+    float: left !important;
+  }
+}
+
+@media (min-width: 1061px) and (max-width: 1091px) {
+ .bottomToAll {
+    float: left !important;
+  } 
+}
+
+@media (max-width: 1060px) {
+
+  /*HEADER*/
+  .wrapper-header{ height: 350px;}
+  .desktop{display: none;}
+  .mobile{display: block;}
+  .ball_cristo{ display: none;}
+  .box_event{ width: 80%; top: 100px; min-width: inherit;
+      h2{ font-size: 4vw;}
+      h3{ font-size: 3vw;}
+  }
+  .box_local{ width: 45%; top: 140px; min-width: inherit;
+      h4{font-size: 2.5vw;}
+  }
+  /*END HEADER*/
+  .bottomToAll {
+    float: left !important;
+  }
+  #menufixo {
+    display: none !important;
+
+  }
+  #HoldPatrocinador {
+    display: none;
+  }
+
+}
+@media screen and (max-width: 991px){
+  #MainBottom {
+    width: 725px;
+    margin: auto;
+  }
+  .wrapper-info-icons{
+    .content-box{ width: 75%; text-align: center;}
+  }
+  .wrapper-pgm{
+    .wrapper-horarios{
+      .programacao{
+        div{ float: none;}
+        .box-horario{ padding: 5px; position: relative; height: 50px; width: 100%;
+          span{ width: inherit; display: inline;}
+          center{ position: relative; top: inherit; left: inherit; padding: 10px;}
+        }
+        .picture-palestrante{ position: absolute; right: 20px; bottom: 25px; top: inherit; width: 150px; height: 150px;
+          img{ height: 100%; border-radius: 35%; margin-top: 0px; height: 90%;}
+        }
+        &:hover{
+          .box-horario{
+            span:nth-child(1):before{top: 5px; left: 5px;}
+          }
+        }
+      }
+    }
+    .bottomToAll {
+      float: left !important;
+    }
+  }
+
+  .wrapper-hospedar{
+    .boxht{ 
+      .imagem-hospedagem{ padding-right: 14px 5px;
+        img{ display: block; width: 45%; margin: auto;}
+      }
+    }
+  }
+  
+}
+@media screen and (max-width: 768px) {
+  /*HEADER*/
+  #MainBottom {
+    width: 360px;
+    margin: auto;
+  }
+  .bottomToAll {
+    float: left !important;
+  }
+  .button-inscrevase.btn1 { float: initial;}
+  .button-inscrevase.btn2 { float: initial;}
+  .box_event{ width: 90%; top: 100px;
+      h2{ font-size: 4vw;}
+      h3{ font-size: 3vw;}
+  }
+  .box_local{ width: 60%; top: 140px;
+      h4{font-size: 2.5vw;}
+  }
+  /*END HEADER*/
+  .wrapper-info-icons{
+    .content-box{ width: 80%;}
+  }
+  .wrapper-about{
+    h3{ text-align: center;}
+  }
+  .wrapper-oquevairolar{
+    h4{text-align: center;}
+  }
+  
+  .wrapper-pgm{
+    h3{ text-align: center;}
+  }
+  .wrapper-pgm{
+    .wrapper-horarios{
+      .programacao{
+        .descricao{ width: 100%;}
+        .picture-palestrante{ position: absolute; right: 0px; bottom: inherit; top: 0px; width: 65px; height: auto;
+          img{ border-radius: 5px;}
+        }
+      }
+    }
+  }
+
+  .wrapper-patrocinio{
+    h3{ text-align: center;}
+    ul{
+      li{ margin: 1px 30%;}
+    }
+  }
+  .wrapper-apoio1{
+    h4{ text-align: center;}
+    ul{
+      li{ margin: 1% 7% 1% 9%;}
+    }
+  }
+  .wrapper-apoio2{
+    h4{ text-align: center;}
+    ul{
+      li{ margin: 1% 7% 1% 9%;}
+    }
+  }
+  .wrapper-local{
+    h3{ text-align: center;}
+  }
+  .wrapper-hospedar{
+    h3{ text-align: center;}
+  }
+
+}
+
+
+@media screen and (max-width: 529px) {
+   /*HEADER*/
+   #MainBottom {
+    width: 100%;
+    margin: auto;
+  }
+   .bottomToAll {
+    float: left !important;
+    width: 100%;
+  }
+  .box_event{ width: 90%; top: 100px;
+      h2{ font-size: 4vw;}
+      h3{ font-size: 3vw;}
+  }
+  .box_local{ width: 60%; top: 140px;
+      h4{font-size: 2.5vw;}
+  }
+  /*END HEADER*/
+  .wrapper-info-icons{
+    .content-box{ width: 80%;}
+  }
+  .wrapper-about{
+    h3{ text-align: center;}
+  }
+  .wrapper-oquevairolar{
+    h4{text-align: center;}
+  }
+  
+  .wrapper-pgm{
+    h3{ text-align: center;}
+  }
+  .wrapper-pgm{
+    .wrapper-horarios{
+      .programacao{
+        .picture-palestrante{ position: absolute; right: 0px; bottom: inherit; top: 0px; width: 65px; height: auto;
+          img{ border-radius: 5px;}
+        }
+      }
+    }
+  }
+
+  .wrapper-patrocinio{
+    h3{ text-align: center;}
+    ul{
+      li{ margin: 1px 30%;}
+    }
+  }
+  .wrapper-apoio1{
+    h4{ text-align: center;}
+    ul{
+      li{ margin: 1% 7% 1% 9%;}
+    }
+  }
+  .wrapper-apoio2{
+    h4{ text-align: center;}
+    ul{
+      li{ margin: 1% 7% 1% 9%;}
+    }
+  }
+  .wrapper-local{
+    h3{ text-align: center;}
+  }
+  .wrapper-hospedar{
+    h3{ text-align: center;}
+  }
+
+}
+
+
+@media screen and (max-width: 480px) {
+    /*HEADER*/
+    #MainBottom {
+    width: 100%;
+    margin: auto;
+  }
+  .box_event{ 
+      h2{ font-size: 4.3vw;}
+      h3{ font-size: 3.9vw;}
+  }
+  .box_local{ width: 80%;
+      h4{font-size: 5vw;}
+  }
+   /*END HEADER*/
+  .button-inscrevase { width: 100%;}
+  .btn-custom { padding: 10px 0; font-size: 4.5vw;}
+
+  .wrapper-info-icons{
+    .icon-location_info{ float: none; margin: auto;}
+    .icon-calendar_info{ float: none; margin: auto;}
+    .icon-mic_info{ float: none; margin: auto;}
+    .icon-users_info{ float: none; margin: auto;}
+    .content-box{ width: 100%;}
+  }
+  .wrapper-oquevairolar{
+    ul{
+      li{ width: 100%; text-align: center; list-style: none;}
+    }
+  }
+
+  .wrapper-pgm{
+    .wrapper-horarios{
+      .horarios{
+          &:hover{
+            p:before{ display: none;}
+        }
+      }
+      .programacao{
+        &:hover{
+          .box-horario{ 
+            span:nth-child(1):before{ display: none;}
+          }
+        }
+      }
+    }
+  }
+
+  .wrapper-local{
+    .image-local{
+      img{ width: 100%;}
+    }
+  }
+
+  .wrapper-patrocinio{
+    h3{ text-align: center;}
+    ul{
+      li{ margin: 5px 17%;}
+    }
+  }
+  
+  .wrapper-apoio1 ul li{ margin: 0 1% 10px 40px;}
+  .wrapper-apoio2 ul li{ margin: 0 1% 10px 40px;}
+  .wrapper-about h3{ font-size: 10vw;}
+  .wrapper-pgm h3{ font-size: 10vw;}
+  .wrapper-patrocinio h3{ font-size: 10vw;}
+  .wrapper-local h3{ font-size: 10vw;}
+  .wrapper-hospedar h3{ font-size: 10vw;}
+
+  footer .wrapper-footer { width: 65%;}
+}
+
+@media screen and (max-width: 320px) {
+}
+
+
+
+
+
+
+
+
+
+
+
+
