@@ -1,2 +1,9 @@
 .tmp/
 .sass-cache/
+.editorconfig
+.gitattributes
+.jshintrc
+node_modules/
+dist/
+bower.json
+bower_components/
