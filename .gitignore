@@ -1,6 +1,16 @@
 .tmp/
 .sass-cache/
+<<<<<<< HEAD
 bower_components/
 node_modules/
 dist/
 test/
+=======
+.editorconfig
+.gitattributes
+.jshintrc
+node_modules/
+dist/
+bower.json
+bower_components/
+>>>>>>> 1e55a2c95cd4c84856fc35a27c1ad95c89d39db2

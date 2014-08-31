@@ -705,6 +705,7 @@ padding: 5px;
   .wrapper-pgm{
     .wrapper-horarios{
       .programacao{
+        .descricao{ width: 100%;}
         .picture-palestrante{ position: absolute; right: 0px; bottom: inherit; top: 0px; width: 65px; height: auto;
           img{ border-radius: 5px;}
         }
@@ -876,6 +877,8 @@ padding: 5px;
   .wrapper-patrocinio h3{ font-size: 10vw;}
   .wrapper-local h3{ font-size: 10vw;}
   .wrapper-hospedar h3{ font-size: 10vw;}
+
+  footer .wrapper-footer { width: 65%;}
 }
 
 @media screen and (max-width: 320px) {
