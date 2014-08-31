@@ -6191,8 +6191,6 @@ footer {
   .wrapper-pgm h3 {
     text-align: center; }
 
-  .wrapper-pgm .wrapper-horarios .programacao .descricao {
-    width: 100%; }
   .wrapper-pgm .wrapper-horarios .programacao .picture-palestrante {
     position: absolute;
     right: 0px;
@@ -6366,7 +6364,4 @@ footer {
     font-size: 10vw; }
 
   .wrapper-hospedar h3 {
-    font-size: 10vw; }
-
-  footer .wrapper-footer {
-    width: 65%; } }
+    font-size: 10vw; } }
