@@ -5935,6 +5935,48 @@ body {
           .wrapper-hospedar .boxht .endereco-hospedagem ul li a:hover {
             text-decoration: underline; }
 
+.container-section8 {
+  padding: 20px 15px;
+  margin-top: 50px; }
+
+.wrapper-hospedar h3 {
+  color: #194a6b;
+  font-size: 50px;
+  margin: 0; }
+.wrapper-hospedar .boxht {
+  border: 1px solid #666;
+  position: relative;
+  overflow: hidden;
+  margin-top: 35px; }
+  .wrapper-hospedar .boxht .imagem-hospedagem {
+    padding: 15px 5px; }
+  .wrapper-hospedar .boxht .endereco-hospedagem {
+    padding: 10px; }
+    .wrapper-hospedar .boxht .endereco-hospedagem ul {
+      list-style: none;
+      padding: 0; }
+      .wrapper-hospedar .boxht .endereco-hospedagem ul li {
+        line-height: 20px; }
+        .wrapper-hospedar .boxht .endereco-hospedagem ul li strong {
+          padding-right: 5px; }
+        .wrapper-hospedar .boxht .endereco-hospedagem ul li a {
+          color: #f39b1a; }
+          .wrapper-hospedar .boxht .endereco-hospedagem ul li a:hover {
+            text-decoration: underline; }
+
+.organizadores {
+  width: 160px;
+  padding: 5px;
+  margin-top: 20px;
+  float: left;
+  margin-left: 23px; }
+  .organizadores img {
+    border-radius: 100px;
+    margin-bottom: 10px;
+    cursor: pointer; }
+  .organizadores p {
+    text-align: center; }
+
 /* ----- END SECTION SECTION HOSPEDAGEM ----- */
 footer {
   width: 100%;

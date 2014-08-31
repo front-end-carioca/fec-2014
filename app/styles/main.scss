@@ -486,6 +486,40 @@ body {margin: 0; padding: 0; font-family: "Helvetica Neue", Helvetica, Arial, sa
     }
   }
 }
+.container-section8 {padding: 20px 15px; margin-top: 50px;}
+.wrapper-hospedar{
+  h3{ color: #194a6b; font-size: 50px; margin: 0;}
+  .boxht{ border: 1px solid #666; position: relative; overflow: hidden; margin-top: 35px;
+    .imagem-hospedagem{ padding: 15px 5px;}
+    .endereco-hospedagem{ padding: 10px;
+      ul{ list-style: none; padding: 0;
+        li{ line-height: 20px;
+          strong{ padding-right: 5px;}
+          a{ color: #f39b1a;
+            &:hover{ text-decoration: underline;}
+          }
+        }
+      }
+    }
+  }
+}
+.organizadores {
+    width: 160px;
+    padding: 5px;
+    margin-top: 20px;
+    float: left;
+    margin-left: 23px;
+
+  img {
+    border-radius: 100px;
+    margin-bottom: 10px;
+    cursor: pointer;
+
+  }
+  p {
+    text-align: center;
+  }
+}
 /* ----- END SECTION SECTION HOSPEDAGEM ----- */
 
 footer{ width: 100%; height: auto; min-height: 40px; padding: 10px; background: rgba(0, 0, 0, 0.8); color: #fff !important;
