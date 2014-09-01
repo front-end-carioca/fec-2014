@@ -1,8 +1,0 @@
-.editorconfig
-.gitattributes
-.jshintrc
-node_modules/
-dist/
-bower_components/
-.tmp/
-.sass-cache/
