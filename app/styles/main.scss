@@ -401,13 +401,12 @@ body {margin: 0; padding: 0; font-family: "Helvetica Neue", Helvetica, Arial, sa
 .wrapper-patrocinio{ margin-bottom: 30px; overflow: hidden;
   h3{ color: #194a6b; font-size: 50px; margin: 0;}
   ul{list-style: none; overflow: hidden; padding: 0; margin-top: 20px;
-    li{ float: left; border: 1px solid #ccc; border-radius: 5px; margin-right: 10px; margin-bottom: 10px;
-      &:hover{
-        border: 1px solid #f39b1a;
-      }
+    li{ float: left; margin-right: 10px; margin-bottom: 10px;
       a{overflow: hidden; display: block; padding: 0;
-        img{ /*max-height: 75px;*/}
+        &:hover img{ border: 1px solid #f39b1a;}
+        img{ border: 1px solid #d3d3d3; border-radius: 5px;}
       }
+      p { text-align: center; margin: 0; margin-top: 10px; border-radius: 5px; background: #1b4866; color: #fff; padding: 5px 0;}
     }
   }
 }
@@ -728,6 +727,7 @@ padding: 5px;
         .picture-palestrante{ position: absolute; right: 0px; bottom: inherit; top: 0px; width: 65px; height: auto;
           img{ border-radius: 5px;}
         }
+        .descricao{ width: 100%;}
       }
     }
   }
@@ -896,6 +896,8 @@ padding: 5px;
   .wrapper-patrocinio h3{ font-size: 10vw;}
   .wrapper-local h3{ font-size: 10vw;}
   .wrapper-hospedar h3{ font-size: 10vw;}
+
+  footer .wrapper-footer { width: 80%;}
 }
 
 
